@@ -9,7 +9,7 @@
   "notes": "1. 全新品牌鲸鱼标志，应用图标与启动动画全面焕新；2. 新增高级开启动画；3. 修复系统无障碍列表中找不到本应用的问题；4. 工作区权限默认放行本机文件；5. 移除安全键盘组件。",
   "download": "https://mrstudiogame.github.io/dsh-move/#download",
   "apks": {
-    "arm64": "https://mrstudiogame.github.io/dsh-move/downloads/DeepSeek-Harness-Move-1.0.1-arm64.apk",
-    "universal": "https://mrstudiogame.github.io/dsh-move/downloads/DeepSeek-Harness-Move-1.0.1-universal.apk"
+    "arm64": "https://github.com/MRStudioGame/dsh-move/releases/download/v1.0.1/DeepSeek-Harness-Move-1.0.1-arm64.apk",
+    "universal": "https://github.com/MRStudioGame/dsh-move/releases/download/v1.0.1/DeepSeek-Harness-Move-1.0.1-universal.apk"
   }
 }
