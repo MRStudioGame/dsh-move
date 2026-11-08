@@ -2,14 +2,14 @@
   "app": "DeepSeek Harness Move",
   "package": "com.dshmove.app",
   "channel": "stable",
-  "version": "1.4.0",
-  "build": 1400,
+  "version": "1.5.0",
+  "build": 1500,
   "minSdk": 26,
   "date": "2026-11-08",
-  "notes": "1. 新增 Agent 自动任务：原生无障碍驱动 + 本地离线 OCR，可直接操控手机；2. 高速定位体系：控件树优先、页面缓存复用、OCR 仅兜底，任务整条预规划连续执行，明显快于逐帧找按钮；3. 插件系统：核心插件锁定常驻，美化娱乐插件自由开关；4. 小鲸鱼插件：输入框右上角悬浮，点击查看当前模型实时余额；5. 会话菜单改版：左上角一键新任务、重命名/归档/删除、归档会话页；6. 全新三态高级思考动画（思考中/规划中/执行中）。",
+  "notes": "1. 手机操控核心补齐：聊天里发「打开备忘录，写一篇桃花源记」会真的去点屏幕，不再只回文字；2. 本机应用库：枚举桌面应用建立「名称↔包名」表，打开第三方 App 直接命中，找不到会明确提示；3. 无障碍全能力：点击/长按/滑动/输入/返回/Home/最近任务/按控件选中点击/容器翻页；4. 控件优先定位：控件树→页面缓存→坐标兜底→OCR，输入支持 SET_TEXT/聚焦重试/剪贴板粘贴三级兜底；5. 拉起应用后轮询前台包名校验，启动自动检测无障碍并弹引导教程，常驻前台服务保活；6. 修复 API Key 输入框触发系统安全键盘、点新任务不跳转新会话。",
   "download": "https://mrstudiogame.github.io/dsh-move/#download",
   "apks": {
-    "arm64": "https://github.com/MRStudioGame/dsh-move/releases/download/v1.4.0/DeepSeek-Harness-Move-1.4.0-arm64.apk",
+    "arm64": "https://github.com/MRStudioGame/dsh-move/releases/download/v1.5.0/DeepSeek-Harness-Move-1.5.0-arm64.apk",
     "universal": "https://github.com/MRStudioGame/dsh-move/releases/download/v1.4.0/DeepSeek-Harness-Move-1.4.0-universal.apk"
   }
 }

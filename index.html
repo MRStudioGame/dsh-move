@@ -41,7 +41,7 @@
   <div class="hero-inner">
     <div class="hero-copy">
       <div class="hero-badge">
-        <span class="dot"></span> v1.4.0 正式版已发布
+        <span class="dot"></span> v1.5.0 正式版已发布
       </div>
       <h1>把 <span class="grad">DeepSeek&nbsp;Harness</span><br>装进口袋。</h1>
       <p class="hero-sub">
@@ -163,23 +163,24 @@
       <h3>arm64-v8a</h3>
       <p class="dl-desc">适用于近十年内几乎所有手机与平板，体积更小、安装更快。</p>
       <div class="dl-info">
-        <span>v1.4.0 (1400)</span><span>约 35 MB</span><span>Android 8.0+</span>
+        <span>v1.5.0 (1500)</span><span>约 35 MB</span><span>Android 8.0+</span>
       </div>
-      <a class="btn btn-primary btn-block" href="https://github.com/MRStudioGame/dsh-move/releases/download/v1.4.0/DeepSeek-Harness-Move-1.4.0-arm64.apk" download>
+      <a class="btn btn-primary btn-block" href="https://github.com/MRStudioGame/dsh-move/releases/download/v1.5.0/DeepSeek-Harness-Move-1.5.0-arm64.apk" download>
         下载 arm64 APK
       </a>
-      <div class="dl-sha">SHA-256：<code id="sha-arm64">a38debf83316a5accd85898222afa2e87875899f6eb9e1c574c33110a1059cdc</code></div>
+      <div class="dl-sha">SHA-256：<code id="sha-arm64">2e44533a928179b7087984270dbc612a839ca95c8375355d9065d40b0a9ac20c</code></div>
     </div>
     <div class="dl-card">
-      <h3>Universal</h3>
-      <p class="dl-desc">通用包（arm64-v8a + armeabi-v7a），老设备或不确定架构时选这个。</p>
+      <h3>关于架构</h3>
+      <p class="dl-desc">本次 1.5.0 仅发布 arm64-v8a 包（覆盖近十年几乎所有机型，体积更小、安装更快）。
+      2017 年前的老设备（armeabi-v7a）可继续使用 1.4.0 通用包。</p>
       <div class="dl-info">
-        <span>v1.4.0 (1400)</span><span>约 56 MB</span><span>Android 8.0+</span>
+        <span>arm64-v8a</span><span>Android 8.0+</span>
       </div>
       <a class="btn btn-ghost btn-block" href="https://github.com/MRStudioGame/dsh-move/releases/download/v1.4.0/DeepSeek-Harness-Move-1.4.0-universal.apk" download>
-        下载通用 APK
+        下载 v1.4.0 通用包
       </a>
-      <div class="dl-sha">SHA-256：<code id="sha-universal">902c63c9ea44fa596b685f5b5055fa55dda458eda00ccba4141fed13e012ee85</code></div>
+      <div class="dl-sha">旧版通用包 SHA-256：<code id="sha-universal">902c63c9ea44fa596b685f5b5055fa55dda458eda00ccba4141fed13e012ee85</code></div>
     </div>
   </div>
   <div class="dl-steps">
@@ -196,6 +197,19 @@
     <p>应用内「关于 → 检查更新」会自动读取本页版本清单。</p>
   </div>
   <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-ver">v1.5.0 <span class="tl-date">2026-11-08</span></div>
+      <ul>
+        <li><b>手机操控核心补齐</b>：聊天里发「打开备忘录，写一篇桃花源记」会真的去点屏幕，不再只回一段文字</li>
+        <li><b>本机应用库</b>：枚举桌面应用建立「名称 ↔ 包名」表，「打开豆包 / 打开备忘录」直接命中，找不到会明确提示</li>
+        <li><b>无障碍全能力</b>：点击 / 长按 / 滑动 / 输入 / 返回 / Home / 最近任务 / 按控件选中点击 / 容器翻页</li>
+        <li><b>控件优先定位</b>：控件树 → 页面缓存 → 坐标兜底 → OCR，点不到控件才用坐标</li>
+        <li><b>输入三级兜底</b>：SET_TEXT → 聚焦重试 → 剪贴板粘贴，长文本也能写进笔记</li>
+        <li><b>启动校验</b>：拉起后轮询前台包名 5 秒，确认真的打开了才算成功</li>
+        <li><b>权限引导与保活</b>：启动自动检测无障碍并弹教程，常驻前台服务 + 电池白名单引导</li>
+        <li><b>修复</b>：API Key 输入框不再触发系统安全键盘；点「新任务」立刻切到新会话</li>
+      </ul>
+    </div>
     <div class="tl-item">
       <div class="tl-ver">v1.4.0 <span class="tl-date">2026-11-08</span></div>
       <ul>
