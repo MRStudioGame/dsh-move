@@ -2,14 +2,14 @@
   "app": "DeepSeek Harness Move",
   "package": "com.dshmove.app",
   "channel": "stable",
-  "version": "1.0.1",
-  "build": 1001,
+  "version": "1.4.0",
+  "build": 1400,
   "minSdk": 26,
-  "date": "2026-11-07",
-  "notes": "1. 全新品牌鲸鱼标志，应用图标与启动动画全面焕新；2. 新增高级开启动画；3. 修复系统无障碍列表中找不到本应用的问题；4. 工作区权限默认放行本机文件；5. 移除安全键盘组件。",
+  "date": "2026-11-08",
+  "notes": "1. 新增 Agent 自动任务：原生无障碍驱动 + 本地离线 OCR，可直接操控手机；2. 高速定位体系：控件树优先、页面缓存复用、OCR 仅兜底，任务整条预规划连续执行，明显快于逐帧找按钮；3. 插件系统：核心插件锁定常驻，美化娱乐插件自由开关；4. 小鲸鱼插件：输入框右上角悬浮，点击查看当前模型实时余额；5. 会话菜单改版：左上角一键新任务、重命名/归档/删除、归档会话页；6. 全新三态高级思考动画（思考中/规划中/执行中）。",
   "download": "https://mrstudiogame.github.io/dsh-move/#download",
   "apks": {
-    "arm64": "https://github.com/MRStudioGame/dsh-move/releases/download/v1.0.1/DeepSeek-Harness-Move-1.0.1-arm64.apk",
-    "universal": "https://github.com/MRStudioGame/dsh-move/releases/download/v1.0.1/DeepSeek-Harness-Move-1.0.1-universal.apk"
+    "arm64": "https://github.com/MRStudioGame/dsh-move/releases/download/v1.4.0/DeepSeek-Harness-Move-1.4.0-arm64.apk",
+    "universal": "https://github.com/MRStudioGame/dsh-move/releases/download/v1.4.0/DeepSeek-Harness-Move-1.4.0-universal.apk"
   }
 }
