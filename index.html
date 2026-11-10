@@ -41,7 +41,7 @@
   <div class="hero-inner">
     <div class="hero-copy">
       <div class="hero-badge">
-        <span class="dot"></span> v1.5.0 正式版已发布
+        <span class="dot"></span> v1.6.0 正式版已发布
       </div>
       <h1>把 <span class="grad">DeepSeek&nbsp;Harness</span><br>装进口袋。</h1>
       <p class="hero-sub">
@@ -163,16 +163,16 @@
       <h3>arm64-v8a</h3>
       <p class="dl-desc">适用于近十年内几乎所有手机与平板，体积更小、安装更快。</p>
       <div class="dl-info">
-        <span>v1.5.0 (1500)</span><span>约 35 MB</span><span>Android 8.0+</span>
+        <span>v1.7.0 (1700)</span><span>约 36 MB</span><span>Android 8.0+</span>
       </div>
-      <a class="btn btn-primary btn-block" href="https://github.com/MRStudioGame/dsh-move/releases/download/v1.5.0/DeepSeek-Harness-Move-1.5.0-arm64.apk" download>
+      <a class="btn btn-primary btn-block" href="https://github.com/MRStudioGame/dsh-move/releases/download/v1.7.0/DeepSeek-Harness-Move-1.7.0-arm64.apk" download>
         下载 arm64 APK
       </a>
-      <div class="dl-sha">SHA-256：<code id="sha-arm64">40060b985d42f1d6143e8087a2eca4beb84442e69444c660608251279249ee12</code></div>
+      <div class="dl-sha">SHA-256：<code id="sha-arm64">d90d4a3bf65de3c57600d434e9bb64bc6282fac1558ebfc7798f70f528ac78fb</code></div>
     </div>
     <div class="dl-card">
       <h3>关于架构</h3>
-      <p class="dl-desc">本次 1.5.0 仅发布 arm64-v8a 包（覆盖近十年几乎所有机型，体积更小、安装更快）。
+      <p class="dl-desc">本次 1.7.0 仅发布 arm64-v8a 包（覆盖近十年几乎所有机型，体积更小、安装更快）。
       2017 年前的老设备（armeabi-v7a）可继续使用 1.4.0 通用包。</p>
       <div class="dl-info">
         <span>arm64-v8a</span><span>Android 8.0+</span>
@@ -197,6 +197,18 @@
     <p>应用内「关于 → 检查更新」会自动读取本页版本清单。</p>
   </div>
   <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-ver">v1.6.0 <span class="tl-date">2026-11-08</span></div>
+      <ul>
+        <li><b>自动化顶部悬浮状态条</b>：执行时贴顶弹出一条磨砂长条，实时显示「正在启动备忘录应用 / 正在新建空白笔记 / 正在输入文本内容」，不是你原话；带「停止」按钮，长按可本次隐藏，报错转红</li>
+        <li><b>富文本任务报告</b>：任务结束输出「任务完成 + 执行流程 + 统计表 + 备注」结构，OCR 原文、截图文件名、函数名全部移出主界面</li>
+        <li><b>独立调试日志</b>：底层日志收进消息下方【调试日志】面板，默认收起，可单独导出 json</li>
+        <li><b>全格式导出</b>：txt / md / docx / pdf / xlsx / csv / png / jpg / svg / json / html 多选批量生成，带进度条，文件直接挂在消息里点开即下载</li>
+        <li><b>字号自定义 5 档</b>：超小 / 小 / 标准 / 大 / 超大，真实 fontSize；支持「标题超大、正文标准」单条混排、「调大一点」升降档，设置页可改全局默认</li>
+        <li><b>导出保留字号</b>：docx 每个 run 单独写尺寸，pdf 按真实字号渲染，不会全篇一个大小</li>
+        <li><b>执行流程折叠</b>：超过 6 步自动收起，点「展开全部执行流程」查看</li>
+      </ul>
+    </div>
     <div class="tl-item">
       <div class="tl-ver">v1.5.0 <span class="tl-date">2026-11-08</span></div>
       <ul>
