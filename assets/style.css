@@ -463,6 +463,26 @@ img { display: block; }
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.03);
 }
+.dl-alt {
+  margin-top: 12px;
+  font-size: 12px;
+  color: var(--text-3);
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.dl-alt a {
+  color: var(--text-2);
+  text-decoration: none;
+  border-bottom: 1px dashed var(--border);
+  padding-bottom: 1px;
+  transition: color .18s, border-color .18s;
+}
+.dl-alt a:hover {
+  color: var(--accent, #9ab0e8);
+  border-color: var(--accent, #9ab0e8);
+}
 .dl-sha {
   margin-top: 14px;
   font-size: 11.5px;
