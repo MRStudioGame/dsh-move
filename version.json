@@ -9,7 +9,11 @@
   "notes": "1. 新增输入框下方「操作许可」单选下拉：始终询问 / 按需确认（默认）/ 全部允许，三项均带 SVG 矢量图标与说明小字，选择本地持久保存；2. 始终询问：点击、滑动、输入、截图、读屏、读写文件、网络请求全部弹窗确认，弹窗写明操作、访问路径与风险；3. 按需确认：只对无障碍操控、读写文件、发送文件、外部网络请求弹窗，普通对话与插件余额查询直接放行；4. 全部允许：切换前二次风险确认，开启后自动化全程不弹窗；5. 切换成功均有 Toast 提示；6. 权限开关只管应用内 Agent 行为，系统无障碍/悬浮窗权限仍需手动开启。",
   "download": "https://mrstudiogame.github.io/dsh-move/#download",
   "apks": {
-    "arm64": "https://github.com/MRStudioGame/dsh-move/releases/download/v1.7.0/DeepSeek-Harness-Move-1.7.0-arm64.apk",
-    "universal": "https://github.com/MRStudioGame/dsh-move/releases/download/v1.4.0/DeepSeek-Harness-Move-1.4.0-universal.apk"
-  }
+    "arm64": "https://ghfast.top/https://github.com/MRStudioGame/dsh-move/releases/download/v1.7.0/DeepSeek-Harness-Move-1.7.0-arm64.apk",
+    "arm64_pages": "https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-1.7.0-arm64.apk",
+    "arm64_github": "https://github.com/MRStudioGame/dsh-move/releases/download/v1.7.0/DeepSeek-Harness-Move-1.7.0-arm64.apk",
+    "universal": "https://ghfast.top/https://github.com/MRStudioGame/dsh-move/releases/download/v1.4.0/DeepSeek-Harness-Move-1.4.0-universal.apk"
+  },
+  "sha256_arm64": "d90d4a3bf65de3c57600d434e9bb64bc6282fac1558ebfc7798f70f528ac78fb",
+  "size_arm64": 37818595
 }
