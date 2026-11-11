@@ -2,18 +2,18 @@
   "app": "DeepSeek Harness Move",
   "package": "com.dshmove.app",
   "channel": "stable",
-  "version": "1.7.0",
-  "build": 1700,
+  "version": "1.8.0",
+  "build": 1800,
   "minSdk": 26,
-  "date": "2026-11-10",
-  "notes": "1. 新增输入框下方「操作许可」单选下拉：始终询问 / 按需确认（默认）/ 全部允许，三项均带 SVG 矢量图标与说明小字，选择本地持久保存；2. 始终询问：点击、滑动、输入、截图、读屏、读写文件、网络请求全部弹窗确认，弹窗写明操作、访问路径与风险；3. 按需确认：只对无障碍操控、读写文件、发送文件、外部网络请求弹窗，普通对话与插件余额查询直接放行；4. 全部允许：切换前二次风险确认，开启后自动化全程不弹窗；5. 切换成功均有 Toast 提示；6. 权限开关只管应用内 Agent 行为，系统无障碍/悬浮窗权限仍需手动开启。",
+  "date": "2026-11-11",
+  "notes": "1. 新增目标清单拆解：先拆出全部必达目标，「并且/接着/然后/同时/再/之后」连接的每个动作都成为独立目标，日志先列清单；2. 每一步动作后强制截图校验：启动看是否脱离加载页、点击看页面变化、输入看文字是否落地、滑动/返回看画面变化；3. 单步校验失败自动重试，最多 3 次，仍失败立即中断并写明卡住的步骤；4. 全部步骤结束后强制终检：重新截图对照目标清单逐项核验，未达成项回退补做最多 2 轮；5. 只有全项目标终检通过才标记任务完成，否则判定任务中断，不再提前打勾；6. 报告新增最终任务自检结果表（目标项/预期结果/终检核验），执行流程统一为「第X步：动作｜校验结果」，统计区新增目标达成情况。",
   "download": "https://mrstudiogame.github.io/dsh-move/#download",
   "apks": {
-    "arm64": "https://ghfast.top/https://github.com/MRStudioGame/dsh-move/releases/download/v1.7.0/DeepSeek-Harness-Move-1.7.0-arm64.apk",
-    "arm64_pages": "https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-1.7.0-arm64.apk",
-    "arm64_github": "https://github.com/MRStudioGame/dsh-move/releases/download/v1.7.0/DeepSeek-Harness-Move-1.7.0-arm64.apk",
+    "arm64": "https://ghfast.top/https://github.com/MRStudioGame/dsh-move/releases/download/v1.8.0/DeepSeek-Harness-Move-1.8.0-arm64.apk",
+    "arm64_pages": "https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-1.8.0-arm64.apk",
+    "arm64_github": "https://github.com/MRStudioGame/dsh-move/releases/download/v1.8.0/DeepSeek-Harness-Move-1.8.0-arm64.apk",
     "universal": "https://ghfast.top/https://github.com/MRStudioGame/dsh-move/releases/download/v1.4.0/DeepSeek-Harness-Move-1.4.0-universal.apk"
   },
-  "sha256_arm64": "d90d4a3bf65de3c57600d434e9bb64bc6282fac1558ebfc7798f70f528ac78fb",
-  "size_arm64": 37818595
+  "sha256_arm64": "9ecf442bf92744493e429de5449d3234566ee9b1b51224b110f244aac565098e",
+  "size_arm64": 38867171
 }
