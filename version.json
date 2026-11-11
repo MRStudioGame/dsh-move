@@ -2,18 +2,18 @@
   "app": "DeepSeek Harness Move",
   "package": "com.dshmove.app",
   "channel": "stable",
-  "version": "2.0.0",
-  "build": 2000,
+  "version": "2.0.1",
+  "build": 2001,
   "minSdk": 26,
   "date": "2026-11-11",
-  "notes": "1. 新增 DSH 同款插件市场：七个 Tab、搜索、分类、筛选、两列卡片、多图预览，支持安装 / 更新 / 管理 / 卸载；2. 插件内核升级：34 个插件条目，安装与开关、参数配置、收藏屏蔽全部本地持久化，核心插件锁定不可关闭；3. 新增风控黑白名单：内置银行支付类黑名单，命中直接拦截并弹风险提示，优先级高于权限模式；4. 新增执行速度档位：极速 / 标准 / 慢速，支持全局默认与输入区即时切换，悬浮窗同步显示；5. 高级页新增性能模式，一键关闭全部美化与娱乐插件。",
+  "notes": "1. 菜单栏新增插件市场入口，位于「插件」下方，两个入口并存；2. 插件市场安装的插件会自动汇总到「插件 → 已安装插件」，可直接开关、改参数、卸载；3. 插件页与市场页共用同一份状态，安装、更新、卸载、开关实时同步；4. 未安装市场插件时给出「去插件市场安装」引导。",
   "download": "https://mrstudiogame.github.io/dsh-move/#download",
   "apks": {
-    "arm64": "https://ghfast.top/https://github.com/MRStudioGame/dsh-move/releases/download/v2.0.0/DeepSeek-Harness-Move-2.0.0-arm64.apk",
-    "arm64_pages": "https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-2.0.0-arm64.apk",
-    "arm64_github": "https://github.com/MRStudioGame/dsh-move/releases/download/v2.0.0/DeepSeek-Harness-Move-2.0.0-arm64.apk",
+    "arm64": "https://ghfast.top/https://github.com/MRStudioGame/dsh-move/releases/download/v2.0.1/DeepSeek-Harness-Move-2.0.1-arm64.apk",
+    "arm64_pages": "https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-2.0.1-arm64.apk",
+    "arm64_github": "https://github.com/MRStudioGame/dsh-move/releases/download/v2.0.1/DeepSeek-Harness-Move-2.0.1-arm64.apk",
     "universal": "https://ghfast.top/https://github.com/MRStudioGame/dsh-move/releases/download/v1.4.0/DeepSeek-Harness-Move-1.4.0-universal.apk"
   },
-  "sha256_arm64": "41861bdd95cde2ca2924a597a27a7938cf841e33d600df43ca1501d4323b62f0",
-  "size_arm64": 39196147
+  "sha256_arm64": "52b25bcdca863b1bbf54dd7fb505399f729823a3a400188e85f744913c2a2719",
+  "size_arm64": 39196363
 }
