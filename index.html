@@ -163,21 +163,21 @@
       <h3>arm64-v8a</h3>
       <p class="dl-desc">适用于近十年内几乎所有手机与平板，体积更小、安装更快。</p>
       <div class="dl-info">
-        <span>v1.7.0 (1700)</span><span>约 36 MB</span><span>Android 8.0+</span>
+        <span>v1.8.0 (1800)</span><span>约 37 MB</span><span>Android 8.0+</span>
       </div>
-      <a class="btn btn-primary btn-block" href="https://ghfast.top/https://github.com/MRStudioGame/dsh-move/releases/download/v1.7.0/DeepSeek-Harness-Move-1.7.0-arm64.apk" download>
+      <a class="btn btn-primary btn-block" href="https://ghfast.top/https://github.com/MRStudioGame/dsh-move/releases/download/v1.8.0/DeepSeek-Harness-Move-1.8.0-arm64.apk" download>
         高速下载 arm64 APK
       </a>
       <div class="dl-alt">
         <span>下载慢？换通道：</span>
-        <a href="https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-1.7.0-arm64.apk" download>Pages 直连</a>
-        <a href="https://github.com/MRStudioGame/dsh-move/releases/download/v1.7.0/DeepSeek-Harness-Move-1.7.0-arm64.apk" download>GitHub 原始地址</a>
+        <a href="https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-1.8.0-arm64.apk" download>Pages 直连</a>
+        <a href="https://github.com/MRStudioGame/dsh-move/releases/download/v1.8.0/DeepSeek-Harness-Move-1.8.0-arm64.apk" download>GitHub 原始地址</a>
       </div>
-      <div class="dl-sha">SHA-256：<code id="sha-arm64">d90d4a3bf65de3c57600d434e9bb64bc6282fac1558ebfc7798f70f528ac78fb</code></div>
+      <div class="dl-sha">SHA-256：<code id="sha-arm64">9ecf442bf92744493e429de5449d3234566ee9b1b51224b110f244aac565098e</code></div>
     </div>
     <div class="dl-card">
       <h3>关于架构</h3>
-      <p class="dl-desc">本次 1.7.0 仅发布 arm64-v8a 包（覆盖近十年几乎所有机型，体积更小、安装更快）。
+      <p class="dl-desc">本次 1.8.0 仅发布 arm64-v8a 包（覆盖近十年几乎所有机型，体积更小、安装更快）。
       2017 年前的老设备（armeabi-v7a）可继续使用 1.4.0 通用包。</p>
       <div class="dl-info">
         <span>arm64-v8a</span><span>Android 8.0+</span>
@@ -202,6 +202,27 @@
     <p>应用内「关于 → 检查更新」会自动读取本页版本清单。</p>
   </div>
   <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-ver">v1.8.0 <span class="tl-date">2026-11-11</span></div>
+      <ul>
+        <li><b>目标清单拆解</b>：收到指令先拆出全部必达目标，「并且 / 接着 / 然后 / 同时 / 再 / 之后」连接的每个动作都成为一条独立目标，日志里先列清单再动手</li>
+        <li><b>逐步后置校验</b>：每次点击、输入、滑动、启动、返回之后都截一张图核对——启动看是否脱离加载页、点击看页面有没有变化、输入看文字是否真的落进输入框</li>
+        <li><b>失败自动重试</b>：单步校验不过自动重试，最多 3 次；3 次仍失败立即中断任务，写明卡在哪一步</li>
+        <li><b>全局终检</b>：全部动作跑完不直接收工，重新截图对照目标清单逐条核验，未达成项回退补做，最多 2 轮</li>
+        <li><b>不再提前打勾</b>：只有全项目标终检通过才出现 ✅ 任务完成，否则一律 ❌ 任务中断</li>
+        <li><b>报告新增自检表</b>：执行流程统一「第X步：动作｜校验结果：成功 / 失败」，并新增目标项 / 预期结果 / 终检核验结果三列的自检表，统计区增加目标达成情况</li>
+      </ul>
+    </div>
+    <div class="tl-item">
+      <div class="tl-ver">v1.7.0 <span class="tl-date">2026-11-10</span></div>
+      <ul>
+        <li><b>操作许可下拉</b>：输入框下方新增三档单选——始终询问 / 按需确认（默认）/ 全部允许，每项带 SVG 图标与说明小字，选择本地持久保存</li>
+        <li><b>始终询问</b>：点击、滑动、输入、截图、读屏、读写文件、网络请求逐次弹窗，弹窗写明操作、访问路径与风险</li>
+        <li><b>按需确认</b>：只对无障碍操控、读写文件、发送文件、外部网络请求弹窗，普通对话与插件余额查询直接放行</li>
+        <li><b>全部允许</b>：切换前二次风险确认，开启后自动化全程不再打扰</li>
+        <li><b>边界说明</b>：该开关只管应用内 Agent 行为，安卓无障碍 / 悬浮窗权限仍需在系统设置里手动开启</li>
+      </ul>
+    </div>
     <div class="tl-item">
       <div class="tl-ver">v1.6.0 <span class="tl-date">2026-11-08</span></div>
       <ul>
