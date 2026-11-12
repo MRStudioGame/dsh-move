@@ -163,21 +163,21 @@
       <h3>arm64-v8a</h3>
       <p class="dl-desc">适用于近十年内几乎所有手机与平板，体积更小、安装更快。</p>
       <div class="dl-info">
-        <span>v2.0.3 (2003)</span><span>37.4 MB</span><span>Android 8.0+</span>
+        <span>v2.2.0 (2200)</span><span>37.6 MB</span><span>Android 8.0+</span>
       </div>
-      <a class="btn btn-primary btn-block" href="https://ghfast.top/https://github.com/MRStudioGame/dsh-move/releases/download/v2.0.3/DeepSeek-Harness-Move-2.0.3-arm64.apk" download>
+      <a class="btn btn-primary btn-block" data-dl href="https://ghfast.top/https://github.com/MRStudioGame/dsh-move/releases/download/v2.2.0/DeepSeek-Harness-Move-2.2.0-arm64.apk" download>
         高速下载 arm64 APK
       </a>
       <div class="dl-alt">
         <span>下载慢？换通道：</span>
-        <a href="https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-2.0.3-arm64.apk" download>Pages 直连</a>
-        <a href="https://github.com/MRStudioGame/dsh-move/releases/download/v2.0.3/DeepSeek-Harness-Move-2.0.3-arm64.apk" download>GitHub 原始地址</a>
+        <a data-dl href="https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-2.2.0-arm64.apk" download>Pages 直连</a>
+        <a data-dl href="https://github.com/MRStudioGame/dsh-move/releases/download/v2.2.0/DeepSeek-Harness-Move-2.2.0-arm64.apk" download>GitHub 原始地址</a>
       </div>
-      <div class="dl-sha">SHA-256：<code id="sha-arm64">dfbd36a769821777dae228defcc4a772d01094899956fb104a2f167d99747ec2</code></div>
+      <div class="dl-sha">SHA-256：<code id="sha-arm64">59423ccafa4de714f8c47d52f6b6d09ffb2f819fcdc09d0b9c69cd3488c726c0</code></div>
     </div>
     <div class="dl-card">
       <h3>关于架构</h3>
-      <p class="dl-desc">本次 2.0.3 仅发布 arm64-v8a 包（覆盖近十年几乎所有机型，体积更小、安装更快）。
+      <p class="dl-desc">本次 2.2.0 仅发布 arm64-v8a 包（覆盖近十年几乎所有机型，体积更小、安装更快）。
       2017 年前的老设备（armeabi-v7a）可继续使用 1.4.0 通用包。</p>
       <div class="dl-info">
         <span>arm64-v8a</span><span>Android 8.0+</span>
@@ -202,6 +202,17 @@
     <p>应用内「关于 → 检查更新」会自动读取本页版本清单。</p>
   </div>
   <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-ver">v2.2.0 <span class="tl-date">2026-11-12</span></div>
+      <ul>
+        <li><b>账号体系</b>：游客免登录准入，冷启动不弹窗；点功能节点或提交请求才唤起认证，纯浏览不打扰</li>
+        <li><b>锚点形变弹窗</b>：从触发控件位置 0.3→1.0 弹性展开 380ms，背景同步缩放 0.94 + 亮度衰减 + 高斯模糊，下拉可拖拽销毁、未过阈值回弹，全局单实例</li>
+        <li><b>设备一对一绑定</b>：注册时按 DeviceId 校验，已绑定时先弹「你已有一个账号了！」，再走风险确认，【注销】按钮 5 秒倒计时锁灰，确认后注销原账号数据并重建绑定</li>
+        <li><b>JWT 全局鉴权</b>：登录签发票据本地持久化，业务请求统一携带 Authorization 与设备标识</li>
+        <li><b>Agent 全局悬浮确认</b>：始终询问 / 按需确认档位下，切到其他应用、桌面都能弹出确认卡片，30 秒无操作自动取消任务，缺少悬浮窗权限时直接停任务并提示去开启</li>
+        <li><b>入口调整</b>：顶栏右上角新增蓝底「登录」，抽屉底部新增用户信息区（账号 / 设备短码 / 登录退出）</li>
+      </ul>
+    </div>
     <div class="tl-item">
       <div class="tl-ver">v2.0.3 <span class="tl-date">2026-11-12</span></div>
       <ul>
@@ -384,6 +395,65 @@
 // 导航滚动加深背景
 const nav = document.querySelector('.nav');
 addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 24), {passive: true});
+</script>
+<!-- 微信内置浏览器下载引导：微信里点下载不会真的下载，先教用户「用浏览器打开」 -->
+<div id="wx-guide" class="wx-guide">
+  <div class="wx-tip">
+    <div class="wx-arrow">&#8599;</div>
+    <div class="wx-tip-text">点右上角 <b>&#8943;</b> 选「在浏览器打开」</div>
+  </div>
+  <div class="wx-card">
+    <h4>微信里不能直接安装</h4>
+    <p>微信内置浏览器不支持下载 APK 安装包。请点右上角 <b>&#8943;</b>，
+      选择「在浏览器打开」，再点下载即可正常安装。</p>
+    <div class="wx-actions">
+      <button id="wx-close" class="btn btn-primary">我知道了</button>
+    </div>
+  </div>
+</div>
+<script>
+(function () {
+  var ua = (navigator.userAgent || '').toLowerCase();
+  var isWx = ua.indexOf('micromessenger') !== -1;
+  if (!isWx) return;
+
+  var mask = document.getElementById('wx-guide');
+  if (!mask) return;
+
+  function show(e) {
+    if (e) { e.preventDefault(); e.stopPropagation(); }
+    mask.classList.add('on');
+  }
+
+  function pickLink(el) {
+    while (el && el !== document.body) {
+      if (el.tagName === 'A' &&
+          (el.hasAttribute('data-dl') || el.hasAttribute('download'))) {
+        return el;
+      }
+      el = el.parentNode;
+    }
+    return null;
+  }
+
+  document.addEventListener('click', function (e) {
+    if (pickLink(e.target)) show(e);
+  }, true);
+
+  // 有些 X5 内核下 capture 失效：再兜一层直接绑在链接上
+  var links = document.querySelectorAll('a[data-dl], a[download]');
+  for (var i = 0; i < links.length; i++) {
+    links[i].addEventListener('click', show, false);
+  }
+
+  var close = document.getElementById('wx-close');
+  if (close) {
+    close.addEventListener('click', function () { mask.classList.remove('on'); });
+  }
+  mask.addEventListener('click', function (e) {
+    if (e.target === mask) mask.classList.remove('on');
+  });
+})();
 </script>
 </body>
 </html>
