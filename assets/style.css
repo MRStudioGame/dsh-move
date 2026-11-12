@@ -634,3 +634,60 @@ details p {
   .brand-name { display: none; }
   .section { padding: 72px 20px; }
 }
+
+/* ===== 微信内置浏览器下载引导（v2.2 新增） ===== */
+.wx-guide {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  background: rgba(15, 19, 25, 0.74);
+  padding: 18px 20px 42px;
+  -webkit-tap-highlight-color: transparent;
+}
+.wx-guide.on { display: flex; }
+.wx-tip {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+  color: #fff;
+}
+.wx-arrow {
+  font-size: 44px;
+  line-height: 1;
+  animation: wx-bounce 1.1s ease-in-out infinite;
+}
+.wx-tip-text { font-size: 13px; opacity: 0.94; }
+.wx-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 18px 18px 16px;
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.3);
+}
+.wx-card h4 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  color: #111827;
+}
+.wx-card p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.68;
+  color: #4b5563;
+}
+.wx-actions { margin-top: 14px; }
+.wx-card .btn {
+  width: 100%;
+  height: 42px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@keyframes wx-bounce {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(4px, -6px); }
+}
