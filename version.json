@@ -2,18 +2,18 @@
   "app": "DeepSeek Harness Move",
   "package": "com.dshmove.app",
   "channel": "stable",
-  "version": "2.2.0",
-  "build": 2200,
+  "version": "2.2.1",
+  "build": 2201,
   "minSdk": 26,
   "date": "2026-11-12",
-  "notes": "1. 新增账号体系：游客免登录准入，点功能或提交请求才弹登录；账号密码注册/登录，注册与设备一对一绑定；2. 认证弹窗锚点形变：从触发控件 0.3→1.0 弹性展开 380ms，背景同步 scale 0.94 + 亮度衰减 + 高斯模糊，支持下拉拖拽销毁与回弹；3. 设备重复注册先提示「你已有一个账号了！」，再走风险确认（注销按钮 5 秒倒计时），确认后注销原账号并完成新绑定；4. 新增 Agent 全局悬浮确认弹窗：始终询问/按需确认档位下，切到其他应用或桌面也能确认，30 秒无操作自动取消任务，缺悬浮窗权限直接停任务并提示；5. 抽屉底部新增用户信息区，顶栏右上角新增登录入口。",
+  "notes": "修复登录/注册弹窗文字发虚、输入框与按钮模糊的渲染问题：弹窗改挂到背景高斯模糊层之外的独立 Overlay，内部文字、输入框、Tab、按钮全部恢复矢量锐利，仅保留外层背景模糊遮罩；锚点缩放出场动画、380ms 弹性回弹、下拉拖拽手势、层级、配色、布局结构均保持不变。",
   "download": "https://mrstudiogame.github.io/dsh-move/#download",
   "apks": {
-    "arm64": "https://ghfast.top/https://github.com/MRStudioGame/dsh-move/releases/download/v2.2.0/DeepSeek-Harness-Move-2.2.0-arm64.apk",
-    "arm64_pages": "https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-2.2.0-arm64.apk",
-    "arm64_github": "https://github.com/MRStudioGame/dsh-move/releases/download/v2.2.0/DeepSeek-Harness-Move-2.2.0-arm64.apk",
+    "arm64": "https://ghfast.top/https://github.com/MRStudioGame/dsh-move/releases/download/v2.2.1/DeepSeek-Harness-Move-2.2.1-arm64.apk",
+    "arm64_pages": "https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-2.2.1-arm64.apk",
+    "arm64_github": "https://github.com/MRStudioGame/dsh-move/releases/download/v2.2.1/DeepSeek-Harness-Move-2.2.1-arm64.apk",
     "universal": "https://ghfast.top/https://github.com/MRStudioGame/dsh-move/releases/download/v1.4.0/DeepSeek-Harness-Move-1.4.0-universal.apk"
   },
-  "sha256_arm64": "59423ccafa4de714f8c47d52f6b6d09ffb2f819fcdc09d0b9c69cd3488c726c0",
+  "sha256_arm64": "e604a5469905c37f9ff3431a6ed1a0865071d3370871147349cd786bb749952d",
   "size_arm64": 39393779
 }
