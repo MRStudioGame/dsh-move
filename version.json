@@ -2,18 +2,18 @@
   "app": "DeepSeek Harness Move",
   "package": "com.dshmove.app",
   "channel": "stable",
-  "version": "2.0.1",
-  "build": 2001,
+  "version": "2.0.2",
+  "build": 2002,
   "minSdk": 26,
-  "date": "2026-11-11",
-  "notes": "1. 菜单栏新增插件市场入口，位于「插件」下方，两个入口并存；2. 插件市场安装的插件会自动汇总到「插件 → 已安装插件」，可直接开关、改参数、卸载；3. 插件页与市场页共用同一份状态，安装、更新、卸载、开关实时同步；4. 未安装市场插件时给出「去插件市场安装」引导。",
+  "date": "2026-11-12",
+  "notes": "1. 发送键左侧新增模型切换胶囊，输入框、操作许可、速度档位、发送键全部原位保留；2. 内置 DeepSeek / OpenAI / 通义千问 / Kimi / 豆包等官方 SVG 图标，缩放不失真并随主题换色，未知厂商用中性几何图标；3. 点击胶囊向上弹出 Key 面板，逐条显示别名、模型、余额与选中状态；4. 切换只对当前对话生效，其他会话沿用各自模型；5. 面板底部可添加 Key 或打开管理面板，支持改别名、删除、拖拽排序、设为全局默认；6. 模型表单新增别名与图标选择，支持上传自定义 SVG。",,
   "download": "https://mrstudiogame.github.io/dsh-move/#download",
   "apks": {
-    "arm64": "https://ghfast.top/https://github.com/MRStudioGame/dsh-move/releases/download/v2.0.1/DeepSeek-Harness-Move-2.0.1-arm64.apk",
-    "arm64_pages": "https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-2.0.1-arm64.apk",
-    "arm64_github": "https://github.com/MRStudioGame/dsh-move/releases/download/v2.0.1/DeepSeek-Harness-Move-2.0.1-arm64.apk",
+    "arm64": "https://ghfast.top/https://github.com/MRStudioGame/dsh-move/releases/download/v2.0.2/DeepSeek-Harness-Move-2.0.2-arm64.apk",
+    "arm64_pages": "https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-2.0.2-arm64.apk",
+    "arm64_github": "https://github.com/MRStudioGame/dsh-move/releases/download/v2.0.2/DeepSeek-Harness-Move-2.0.2-arm64.apk",
     "universal": "https://ghfast.top/https://github.com/MRStudioGame/dsh-move/releases/download/v1.4.0/DeepSeek-Harness-Move-1.4.0-universal.apk"
   },
-  "sha256_arm64": "52b25bcdca863b1bbf54dd7fb505399f729823a3a400188e85f744913c2a2719",
-  "size_arm64": 39196363
+  "sha256_arm64": "27510e445b864a9301e8302c5a2696c622e6a2afbd147fda69baad18bc55d8d5",
+  "size_arm64": 39262219
 }
