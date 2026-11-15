@@ -2,19 +2,20 @@
   "app": "DeepSeek Harness Move",
   "package": "com.dshmove.app",
   "channel": "stable",
-  "version": "2.4.0",
-  "build": 2400,
+  "version": "2.5.0",
+  "build": 2500,
   "minSdk": 26,
   "date": "2026-11-15",
-  "notes": "全局登录状态分流与自研用户信息面板；全应用统一自研弹窗容器；更新改为 App 内更新（管理端版本接口 + 前台下载 + MD5 校验 + 安装引导）。",
-  "download": "https://mrstudiogame.github.io/dsh-move/#download",
+  "notes": "v2.5.0：协议级回归管控、观测性矩阵、自研 Toast、代码双面板、插件 Refresh 操作符；合并未单独发布的 v2.4.1 OTA 加固。本清单仅作存档，客户端不再读取。",
   "apks": {
-    "arm64": "https://ghfast.top/https://github.com/MRStudioGame/dsh-move/releases/download/v2.4.0/DeepSeek-Harness-Move-2.4.0-arm64.apk",
-    "arm64_pages": "https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-2.4.0-arm64.apk",
-    "arm64_github": "https://github.com/MRStudioGame/dsh-move/releases/download/v2.4.0/DeepSeek-Harness-Move-2.4.0-arm64.apk",
+    "arm64": "https://ghfast.top/https://github.com/MRStudioGame/dsh-move/releases/download/v2.5.0/DeepSeek-Harness-Move-2.5.0-arm64.apk",
+    "arm64_pages": "https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-2.5.0-arm64.apk",
+    "arm64_github": "https://github.com/MRStudioGame/dsh-move/releases/download/v2.5.0/DeepSeek-Harness-Move-2.5.0-arm64.apk",
     "universal": "https://ghfast.top/https://github.com/MRStudioGame/dsh-move/releases/download/v1.4.0/DeepSeek-Harness-Move-1.4.0-universal.apk"
   },
-  "sha256_arm64": "b9755abee893fa5870717e2a98833537b9057550fe510ad01fba14af70f8739b",
-  "size_arm64": 39460843,
-  "md5_arm64": "1b62ca8c9b992dc79bc44df6d4fe8ab7"
+  "sha256_arm64": "528da5120b96c56762e9d810c1f5ca9d3f98ac7af69f0250728fe7cbc7d4fc71",
+  "size_arm64": 39461247,
+  "md5_arm64": "78579d017663b896c3ee4958363d917c",
+  "archiveOnly": true,
+  "clientUpdateSource": "https://mrstudiogame.github.io/dsh-admin/api/app-version.json"
 }

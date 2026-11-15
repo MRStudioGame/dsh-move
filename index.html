@@ -163,21 +163,21 @@
       <h3>arm64-v8a</h3>
       <p class="dl-desc">适用于近十年内几乎所有手机与平板，体积更小、安装更快。</p>
       <div class="dl-info">
-        <span>v2.4.0 (2400)</span><span>37.6 MB</span><span>Android 8.0+</span>
+        <span>v2.5.0 (2500)</span><span>37.6 MB</span><span>Android 8.0+</span>
       </div>
-      <a class="btn btn-primary btn-block" data-dl href="https://ghfast.top/https://github.com/MRStudioGame/dsh-move/releases/download/v2.4.0/DeepSeek-Harness-Move-2.4.0-arm64.apk" download>
+      <a class="btn btn-primary btn-block" data-dl href="https://ghfast.top/https://github.com/MRStudioGame/dsh-move/releases/download/v2.5.0/DeepSeek-Harness-Move-2.5.0-arm64.apk" download>
         高速下载 arm64 APK
       </a>
       <div class="dl-alt">
         <span>下载慢？换通道：</span>
-        <a data-dl href="https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-2.4.0-arm64.apk" download>Pages 直连</a>
-        <a data-dl href="https://github.com/MRStudioGame/dsh-move/releases/download/v2.4.0/DeepSeek-Harness-Move-2.4.0-arm64.apk" download>GitHub 原始地址</a>
+        <a data-dl href="https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-2.5.0-arm64.apk" download>Pages 直连</a>
+        <a data-dl href="https://github.com/MRStudioGame/dsh-move/releases/download/v2.5.0/DeepSeek-Harness-Move-2.5.0-arm64.apk" download>GitHub 原始地址</a>
       </div>
-      <div class="dl-sha">SHA-256：<code id="sha-arm64">b9755abee893fa5870717e2a98833537b9057550fe510ad01fba14af70f8739b</code></div>
+      <div class="dl-sha">SHA-256：<code id="sha-arm64">528da5120b96c56762e9d810c1f5ca9d3f98ac7af69f0250728fe7cbc7d4fc71</code></div>
     </div>
     <div class="dl-card">
       <h3>关于架构</h3>
-      <p class="dl-desc">本次 2.4.0 仅发布 arm64-v8a 包（覆盖近十年几乎所有机型，体积更小、安装更快）。
+      <p class="dl-desc">本次 2.5.0 仅发布 arm64-v8a 包（覆盖近十年几乎所有机型，体积更小、安装更快）。
       2017 年前的老设备（armeabi-v7a）可继续使用 1.4.0 通用包。</p>
       <div class="dl-info">
         <span>arm64-v8a</span><span>Android 8.0+</span>
@@ -199,9 +199,25 @@
 <section class="section" id="changelog">
   <div class="section-head">
     <h2>更新日志</h2>
-    <p>应用内「关于 → 检查更新」优先读取管理端版本接口，本页清单为备用通道；下载已在 App 内完成。</p>
+    <p>应用内「关于 → 检查更新」只读取管理端版本接口，并在 App 内直接下载 APK；客户端已移除官网备用通道，任何更新分支都不会跳转官网或打开浏览器。</p>
   </div>
   <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-ver">v2.5.0 <span class="tl-date">2026-11-15</span></div>
+      <ul>
+        <li><b>全链路观测性</b>：结构化调试日志矩阵按天落盘（探针 / UI 树 / 坐标点击 / 重试异常栈 / 动效时机 / 响应码 / 终态核对表），杜绝黑盒静默失败</li>
+        <li><b>动态动作流</b>：Agent 播报改为自然语言实时同步观察结果，废弃「第N步｜校验结果」机械化格式</li>
+        <li><b>自研 Toast 与双面板</b>：16 处原生 SnackBar 全量替换为自研轻提示；代码块改为 Code / Live Preview 对照渲染</li>
+        <li><b>插件操作符 Refresh</b>：市场 Update 系列全面替换为 Refresh，UI 文案统一「刷新」</li>
+        <li><b>管理端版本发布 / 插件生命周期</b>：新增 OTA 直链与 MD5 校验的发布管理、插件上架 / 灰度 / 下架与批量操作</li>
+        <li><b>彻底移除官网下载兜底</b>：删除官网 version.json 回落与把官网 #download 页面混入下载直链的逻辑，版本信息与 APK 直链只从管理端接口下发</li>
+        <li><b>全局禁止官网跳转</b>：更新链路不再引用任何官网地址，任何检查 / 下载 / 重试 / 失败分支都不跳转官网、不打开浏览器；关于页官网地址改为纯文本展示</li>
+        <li><b>异常捕获与统一提示</b>：接口请求失败、直链超时 / 404 / 无法拉取统一展示「更新资源获取失败，请稍后重试」，附失败原因与调试日志，提供「重新拉取」</li>
+        <li><b>下载重试与调试日志</b>：下载中断 / 链接失效时提供「重新拉取」「重新下载」，全程记录链接状态与 HTTP 响应码，面板可展开查看</li>
+        <li><b>直链内容防护</b>：仅接受 .apk 结尾的文件直链，响应为网页内容或 MD5 缺失 / 非法时直接判定清单无效</li>
+        <li><b>保持不变</b>：版本号 / 更新日志 / MD5 拉取、前台下载进度、暂停 / 取消、MD5 校验、安装引导与未知应用权限提示</li>
+      </ul>
+    </div>
     <div class="tl-item">
       <div class="tl-ver">v2.4.0 <span class="tl-date">2026-11-15</span></div>
       <ul>
@@ -402,7 +418,7 @@
     </details>
     <details>
       <summary>如何检查更新？</summary>
-      <p>打开应用「设置 → 关于 → 检查更新」，应用会读取管理端版本接口并在 App 内下载、校验 MD5 后引导安装；也可以直接在本页下载最新 APK 覆盖安装。</p>
+      <p>打开应用「设置 → 关于 → 检查更新」，应用会读取管理端版本接口并在 App 内下载、校验 MD5 后引导安装，不会跳转官网或打开浏览器；也可以直接在本页手动下载最新 APK 覆盖安装。</p>
     </details>
     <details>
       <summary>与 DeepSeek 官方是什么关系？</summary>
