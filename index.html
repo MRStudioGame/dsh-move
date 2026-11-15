@@ -163,21 +163,21 @@
       <h3>arm64-v8a</h3>
       <p class="dl-desc">适用于近十年内几乎所有手机与平板，体积更小、安装更快。</p>
       <div class="dl-info">
-        <span>v2.2.2 (2202)</span><span>37.6 MB</span><span>Android 8.0+</span>
+        <span>v2.3.0 (2300)</span><span>37.6 MB</span><span>Android 8.0+</span>
       </div>
-      <a class="btn btn-primary btn-block" data-dl href="https://ghfast.top/https://github.com/MRStudioGame/dsh-move/releases/download/v2.2.2/DeepSeek-Harness-Move-2.2.2-arm64.apk" download>
+      <a class="btn btn-primary btn-block" data-dl href="https://ghfast.top/https://github.com/MRStudioGame/dsh-move/releases/download/v2.3.0/DeepSeek-Harness-Move-2.3.0-arm64.apk" download>
         高速下载 arm64 APK
       </a>
       <div class="dl-alt">
         <span>下载慢？换通道：</span>
-        <a data-dl href="https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-2.2.2-arm64.apk" download>Pages 直连</a>
-        <a data-dl href="https://github.com/MRStudioGame/dsh-move/releases/download/v2.2.2/DeepSeek-Harness-Move-2.2.2-arm64.apk" download>GitHub 原始地址</a>
+        <a data-dl href="https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-2.3.0-arm64.apk" download>Pages 直连</a>
+        <a data-dl href="https://github.com/MRStudioGame/dsh-move/releases/download/v2.3.0/DeepSeek-Harness-Move-2.3.0-arm64.apk" download>GitHub 原始地址</a>
       </div>
-      <div class="dl-sha">SHA-256：<code id="sha-arm64">2f0207252b98883bdc213ab7509b00bcd20b6bc788b8d23297825e8f2be00599</code></div>
+      <div class="dl-sha">SHA-256：<code id="sha-arm64">369f099dc0bf967392141110d8f8753fc86005148e319f820962ef1dffac1eec</code></div>
     </div>
     <div class="dl-card">
       <h3>关于架构</h3>
-      <p class="dl-desc">本次 2.2.2 仅发布 arm64-v8a 包（覆盖近十年几乎所有机型，体积更小、安装更快）。
+      <p class="dl-desc">本次 2.3.0 仅发布 arm64-v8a 包（覆盖近十年几乎所有机型，体积更小、安装更快）。
       2017 年前的老设备（armeabi-v7a）可继续使用 1.4.0 通用包。</p>
       <div class="dl-info">
         <span>arm64-v8a</span><span>Android 8.0+</span>
@@ -202,6 +202,18 @@
     <p>应用内「关于 → 检查更新」会自动读取本页版本清单。</p>
   </div>
   <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-ver">v2.3.0 <span class="tl-date">2026-11-15</span></div>
+      <ul>
+        <li><b>固化 Agent 常驻能力规约</b>：无障碍自动化引擎、控件识别、跨应用操控能力跨会话与多轮对话常驻，不会自动关闭、降级或失效</li>
+        <li><b>静默降级自愈</b>：上一轮自动化完成后本轮若被分流到纯文本应答，自动重置执行链路（清控件识别缓存、刷新应用库、重读权限与截图通道），强制回到真机模式</li>
+        <li><b>指令分流修正</b>：界面操作类指令一律走无障碍链路；仅「明确要求生成文件 / 导出文本 / 复制内容」才允许文本分支；取消长文本写入被误判为聊天的限制</li>
+        <li><b>三权限前置校验</b>：无障碍 / 悬浮窗 / 界面捕获逐项校验，缺项弹窗引导开启并重新读状态，不再直接放弃真机操作</li>
+        <li><b>失败上报与自检</b>：控件识别失败或重试耗尽统一输出【控件识别失败】且继续自动化链路；无论成功失败均输出执行日志、步骤校验结果与目标核对表</li>
+        <li><b>禁止自限</b>：聊天与规划两套系统提示词注入能力章程，禁止输出「无法操作 App」「建议导出 txt / 复制剪贴板」类应答</li>
+        <li>原有目标拆解、单步 3 次重试、终检核对表、按需确认/始终询问档位的跨应用全局确认弹窗、更新模块与全部业务逻辑保持不变</li>
+      </ul>
+    </div>
     <div class="tl-item">
       <div class="tl-ver">v2.2.2 <span class="tl-date">2026-11-13</span></div>
       <ul>
