@@ -2,18 +2,19 @@
   "app": "DeepSeek Harness Move",
   "package": "com.dshmove.app",
   "channel": "stable",
-  "version": "2.3.0",
-  "build": 2300,
+  "version": "2.4.0",
+  "build": 2400,
   "minSdk": 26,
   "date": "2026-11-15",
-  "notes": "固化 Agent 常驻能力规约：能力跨轮次不降级、界面操作强制走真机链路、三权限前置校验、静默降级自愈、控件识别失败标准上报、禁止输出替代方案应答。",
+  "notes": "全局登录状态分流与自研用户信息面板；全应用统一自研弹窗容器；更新改为 App 内更新（管理端版本接口 + 前台下载 + MD5 校验 + 安装引导）。",
   "download": "https://mrstudiogame.github.io/dsh-move/#download",
   "apks": {
-    "arm64": "https://ghfast.top/https://github.com/MRStudioGame/dsh-move/releases/download/v2.3.0/DeepSeek-Harness-Move-2.3.0-arm64.apk",
-    "arm64_pages": "https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-2.3.0-arm64.apk",
-    "arm64_github": "https://github.com/MRStudioGame/dsh-move/releases/download/v2.3.0/DeepSeek-Harness-Move-2.3.0-arm64.apk",
+    "arm64": "https://ghfast.top/https://github.com/MRStudioGame/dsh-move/releases/download/v2.4.0/DeepSeek-Harness-Move-2.4.0-arm64.apk",
+    "arm64_pages": "https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-2.4.0-arm64.apk",
+    "arm64_github": "https://github.com/MRStudioGame/dsh-move/releases/download/v2.4.0/DeepSeek-Harness-Move-2.4.0-arm64.apk",
     "universal": "https://ghfast.top/https://github.com/MRStudioGame/dsh-move/releases/download/v1.4.0/DeepSeek-Harness-Move-1.4.0-universal.apk"
   },
-  "sha256_arm64": "369f099dc0bf967392141110d8f8753fc86005148e319f820962ef1dffac1eec",
-  "size_arm64": 39393779
+  "sha256_arm64": "b9755abee893fa5870717e2a98833537b9057550fe510ad01fba14af70f8739b",
+  "size_arm64": 39460843,
+  "md5_arm64": "1b62ca8c9b992dc79bc44df6d4fe8ab7"
 }

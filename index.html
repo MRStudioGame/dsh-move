@@ -163,21 +163,21 @@
       <h3>arm64-v8a</h3>
       <p class="dl-desc">适用于近十年内几乎所有手机与平板，体积更小、安装更快。</p>
       <div class="dl-info">
-        <span>v2.3.0 (2300)</span><span>37.6 MB</span><span>Android 8.0+</span>
+        <span>v2.4.0 (2400)</span><span>37.6 MB</span><span>Android 8.0+</span>
       </div>
-      <a class="btn btn-primary btn-block" data-dl href="https://ghfast.top/https://github.com/MRStudioGame/dsh-move/releases/download/v2.3.0/DeepSeek-Harness-Move-2.3.0-arm64.apk" download>
+      <a class="btn btn-primary btn-block" data-dl href="https://ghfast.top/https://github.com/MRStudioGame/dsh-move/releases/download/v2.4.0/DeepSeek-Harness-Move-2.4.0-arm64.apk" download>
         高速下载 arm64 APK
       </a>
       <div class="dl-alt">
         <span>下载慢？换通道：</span>
-        <a data-dl href="https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-2.3.0-arm64.apk" download>Pages 直连</a>
-        <a data-dl href="https://github.com/MRStudioGame/dsh-move/releases/download/v2.3.0/DeepSeek-Harness-Move-2.3.0-arm64.apk" download>GitHub 原始地址</a>
+        <a data-dl href="https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-2.4.0-arm64.apk" download>Pages 直连</a>
+        <a data-dl href="https://github.com/MRStudioGame/dsh-move/releases/download/v2.4.0/DeepSeek-Harness-Move-2.4.0-arm64.apk" download>GitHub 原始地址</a>
       </div>
-      <div class="dl-sha">SHA-256：<code id="sha-arm64">369f099dc0bf967392141110d8f8753fc86005148e319f820962ef1dffac1eec</code></div>
+      <div class="dl-sha">SHA-256：<code id="sha-arm64">b9755abee893fa5870717e2a98833537b9057550fe510ad01fba14af70f8739b</code></div>
     </div>
     <div class="dl-card">
       <h3>关于架构</h3>
-      <p class="dl-desc">本次 2.3.0 仅发布 arm64-v8a 包（覆盖近十年几乎所有机型，体积更小、安装更快）。
+      <p class="dl-desc">本次 2.4.0 仅发布 arm64-v8a 包（覆盖近十年几乎所有机型，体积更小、安装更快）。
       2017 年前的老设备（armeabi-v7a）可继续使用 1.4.0 通用包。</p>
       <div class="dl-info">
         <span>arm64-v8a</span><span>Android 8.0+</span>
@@ -199,9 +199,20 @@
 <section class="section" id="changelog">
   <div class="section-head">
     <h2>更新日志</h2>
-    <p>应用内「关于 → 检查更新」会自动读取本页版本清单。</p>
+    <p>应用内「关于 → 检查更新」优先读取管理端版本接口，本页清单为备用通道；下载已在 App 内完成。</p>
   </div>
   <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-ver">v2.4.0 <span class="tl-date">2026-11-15</span></div>
+      <ul>
+        <li><b>全局登录状态分流</b>：账号昵称点击优先读取全局登录态；已登录拉起自研用户信息面板（账号名称 / 绑定设备 ID / 设备绑定信息 / 会话同步配置 / 退出登录），禁止再唤起登录弹窗；游客才走登录弹窗原始动画链路</li>
+        <li><b>统一自研弹窗容器</b>：全应用禁用原生弹窗组件，遮罩铺满全屏视口、消除四周黑边，卡片与遮罩渲染隔离保持文字锐利</li>
+        <li><b>登录弹窗前置状态校验</b>：已登录直接拦截渲染并写入调试日志，在场期间被外部登录会自动收起</li>
+        <li><b>App 内更新</b>：版本信息 / 更新日志 / APK 直链 / MD5 改由管理端版本接口下发，移除跳转官网下载</li>
+        <li><b>前台下载任务</b>：应用内进度面板与前台通知，支持暂停 / 继续 / 取消与断点续传；下载完成校验 MD5，引导开启「安装未知应用」权限后唤起系统安装器</li>
+        <li><b>更新弹窗文案</b>：提供「立即更新」「稍后提醒」，已是最新版本时给出明确提示</li>
+      </ul>
+    </div>
     <div class="tl-item">
       <div class="tl-ver">v2.3.0 <span class="tl-date">2026-11-15</span></div>
       <ul>
@@ -391,7 +402,7 @@
     </details>
     <details>
       <summary>如何检查更新？</summary>
-      <p>打开应用「设置 → 关于 → 检查更新」，应用会自动读取官网版本清单；也可以直接回到本页下载最新 APK 覆盖安装。</p>
+      <p>打开应用「设置 → 关于 → 检查更新」，应用会读取管理端版本接口并在 App 内下载、校验 MD5 后引导安装；也可以直接在本页下载最新 APK 覆盖安装。</p>
     </details>
     <details>
       <summary>与 DeepSeek 官方是什么关系？</summary>
