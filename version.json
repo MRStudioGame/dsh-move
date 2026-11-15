@@ -2,20 +2,20 @@
   "app": "DeepSeek Harness Move",
   "package": "com.dshmove.app",
   "channel": "stable",
-  "version": "2.7.0",
-  "build": 2700,
+  "version": "2.7.1",
+  "build": 2701,
   "minSdk": 26,
   "date": "2026-11-15",
-  "notes": "v2.7.0：插件市场性能与业务闭环重构——管理按钮防抖 + 解析异步隔离（ANR 消除），插件启用实质挂载后台能力（能力注入），新增「申请收录插件」多级状态机业务流与管理端「插件申请管理」模块（病毒扫描 / 回复推送 / 软硬删除）。",
+  "notes": "v2.7.1：修复「软件内检查更新点击无反应」——根因是原生版本通道无超时导致检查状态机永久占用、context 失效与弹窗锁拦截时静默 return。本版加入全链路超时兜底、版本清单三端点并发择优、下载字节数校验与备用直链自动切换。",
   "apks": {
-    "arm64": "https://ghfast.top/https://github.com/MRStudioGame/dsh-move/releases/download/v2.7.0/DeepSeek-Harness-Move-2.7.0-arm64.apk",
-    "arm64_pages": "https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-2.7.0-arm64.apk",
-    "arm64_github": "https://github.com/MRStudioGame/dsh-move/releases/download/v2.7.0/DeepSeek-Harness-Move-2.7.0-arm64.apk",
+    "arm64": "https://ghfast.top/https://github.com/MRStudioGame/dsh-move/releases/download/v2.7.1/DeepSeek-Harness-Move-2.7.1-arm64.apk",
+    "arm64_pages": "https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-2.7.1-arm64.apk",
+    "arm64_github": "https://github.com/MRStudioGame/dsh-move/releases/download/v2.7.1/DeepSeek-Harness-Move-2.7.1-arm64.apk",
     "universal": "https://ghfast.top/https://github.com/MRStudioGame/dsh-move/releases/download/v1.4.0/DeepSeek-Harness-Move-1.4.0-universal.apk"
   },
-  "sha256_arm64": "69178803fdb80c4a04c52bf94e5badbd3caae64c06353861f7e178c21f7e78d6",
+  "sha256_arm64": "ac0a3b7fcd4fe6999e83b130a5c7af8088a64796d396ffc631ddaf37e0374395",
   "size_arm64": 39527159,
-  "md5_arm64": "029edf1f6b0116e151a2e62bfcdf02a7",
+  "md5_arm64": "fe8cf490157a41da9f812ba2185e2bad",
   "archiveOnly": true,
   "clientUpdateSource": "https://mrstudiogame.github.io/dsh-admin/api/app-version.json"
 }
