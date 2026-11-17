@@ -41,7 +41,7 @@
   <div class="hero-inner">
     <div class="hero-copy">
       <div class="hero-badge">
-        <span class="dot"></span> v1.6.0 正式版已发布
+        <span class="dot"></span> v2.10.0 正式版已发布
       </div>
       <h1>把 <span class="grad">DeepSeek&nbsp;Harness</span><br>装进口袋。</h1>
       <p class="hero-sub">
@@ -57,7 +57,7 @@
       </div>
       <ul class="hero-meta">
         <li>Android 8.0+</li>
-        <li>安装包 24 MB 起</li>
+        <li>安装包 37.8 MB 起</li>
         <li>免费 · 无广告</li>
       </ul>
     </div>
@@ -163,21 +163,21 @@
       <h3>arm64-v8a</h3>
       <p class="dl-desc">适用于近十年内几乎所有手机与平板，体积更小、安装更快。</p>
       <div class="dl-info">
-        <span>v2.9.0 (2900)</span><span>37.8 MB</span><span>Android 8.0+</span>
+        <span>v2.10.0 (21000)</span><span>37.8 MB</span><span>Android 8.0+</span>
       </div>
-      <a class="btn btn-primary btn-block" data-dl href="https://ghfast.top/https://github.com/MRStudioGame/dsh-move/releases/download/v2.9.0/DeepSeek-Harness-Move-2.9.0-arm64.apk" download>
+      <a class="btn btn-primary btn-block" data-dl href="https://ghfast.top/https://github.com/MRStudioGame/dsh-move/releases/download/v2.10.0/DeepSeek-Harness-Move-2.10.0-arm64.apk" download>
         高速下载 arm64 APK
       </a>
       <div class="dl-alt">
         <span>下载慢？换通道：</span>
-        <a data-dl href="https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-2.9.0-arm64.apk" download>Pages 直连</a>
-        <a data-dl href="https://github.com/MRStudioGame/dsh-move/releases/download/v2.9.0/DeepSeek-Harness-Move-2.9.0-arm64.apk" download>GitHub 原始地址</a>
+        <a data-dl href="https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-2.10.0-arm64.apk" download>Pages 直连</a>
+        <a data-dl href="https://github.com/MRStudioGame/dsh-move/releases/download/v2.10.0/DeepSeek-Harness-Move-2.10.0-arm64.apk" download>GitHub 原始地址</a>
       </div>
-      <div class="dl-sha">SHA-256：<code id="sha-arm64">a38fc93c014ac918a126188ac7cc6b642d6b950837f92baff41b54403b775ef3</code></div>
+      <div class="dl-sha">SHA-256：<code id="sha-arm64">c625eab234c12fcc21e7c6fc9a094a2bf0e101c791f14f6a1f7df9bc6294e7e0</code></div>
     </div>
     <div class="dl-card">
       <h3>关于架构</h3>
-      <p class="dl-desc">本次 2.9.0 仅发布 arm64-v8a 包（覆盖近十年几乎所有机型，体积更小、安装更快）。
+      <p class="dl-desc">本次 2.10.0 仅发布 arm64-v8a 包（覆盖近十年几乎所有机型，体积更小、安装更快）。
       2017 年前的老设备（armeabi-v7a）可继续使用 1.4.0 通用包。</p>
       <div class="dl-info">
         <span>arm64-v8a</span><span>Android 8.0+</span>
@@ -202,6 +202,19 @@
     <p>应用内「关于 → 检查更新」只读取管理端版本接口，并在 App 内直接下载 APK；客户端已移除官网备用通道，任何更新分支都不会跳转官网或打开浏览器。</p>
   </div>
   <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-ver">v2.10.0 <span class="tl-date">2026-11-18</span></div>
+      <ul>
+        <li><b>DSH 同款思考抽屉</b>：助手消息上方常驻指示器，默认收起；点击或下拉展开、上滑收起，380ms 回弹。内部按意图、推理、规划、动作、观测、收尾分段流式展示完整 ReAct 链路，思考与最终回答分离</li>
+        <li><b>逐条思考缓存</b>：每条助手消息独立保存思考节点，随会话 JSON 持久化；切换会话、重启 App 后可下拉回看</li>
+        <li><b>对话 / 工作双模式</b>：输入框上方胶囊切换并持久化；对话模式不申请权限、不展示思考流；工作模式启用抽屉、校验真机权限、最终回复禁表格</li>
+        <li><b>首次启动模式引导</b>：自绘卡片选择【侧重对话】/【侧重工作】，工作模式立即走权限前置校验</li>
+        <li><b>无账号流程</b>：移除登录拦截与登录入口，本地身份统一走 ChatProfileStore，侧边固定【信息设置】</li>
+        <li><b>热配置增量</b>：冷启动 / 回前台静默拉取 hot-config.json，远程更新系统提示与工作模式约束，无需重装；代码与原生桥仍需安装包</li>
+        <li><b>弹窗统一动效</b>：面板 380ms 回弹、遮罩 12px 模糊；弹窗打开时聊天页缩至 0.94 并做 7px 模糊</li>
+        <li><b>修复</b>：个性自定义入口打不开、对话模式误弹无障碍引导</li>
+      </ul>
+    </div>
     <div class="tl-item">
       <div class="tl-ver">v2.9.0 <span class="tl-date">2026-11-17</span></div>
       <ul>
