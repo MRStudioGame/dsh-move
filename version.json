@@ -2,20 +2,20 @@
   "app": "DeepSeek Harness Move",
   "package": "com.dshmove.app",
   "channel": "stable",
-  "version": "2.10.0",
-  "build": 21000,
+  "version": "2.10.1",
+  "build": 21001,
   "minSdk": 26,
   "date": "2026-11-18",
-  "notes": "v2.10.0：DSH 同款思考抽屉 + 对话/工作双模式 + 无账号流程 + 工作模式禁表格。思考过程逐条持久化、可下拉回看，主气泡只保留最终回答；对话模式不申请权限，工作模式启用抽屉并校验真机权限；移除登录拦截与登录入口；新增首启模式引导与热配置增量；弹窗统一 380ms 回弹与 0.94 背景缩放。",
+  "notes": "v2.10.1 紧急 P0：修复点击个性自定义/工作模式后整页全屏模糊卡死，移除页面级双层高斯模糊、权限探针改异步并加 5 秒超时；外观面板异常自动回滚；创建插件一级入口直接进入创建方式，开发者/想法表单完整闭环，接口失败明确提示重试。",
   "apks": {
-    "arm64": "https://ghfast.top/https://github.com/MRStudioGame/dsh-move/releases/download/v2.10.0/DeepSeek-Harness-Move-2.10.0-arm64.apk",
-    "arm64_pages": "https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-2.10.0-arm64.apk",
-    "arm64_github": "https://github.com/MRStudioGame/dsh-move/releases/download/v2.10.0/DeepSeek-Harness-Move-2.10.0-arm64.apk",
+    "arm64": "https://ghfast.top/https://github.com/MRStudioGame/dsh-move/releases/download/v2.10.1/DeepSeek-Harness-Move-2.10.1-arm64.apk",
+    "arm64_pages": "https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-2.10.1-arm64.apk",
+    "arm64_github": "https://github.com/MRStudioGame/dsh-move/releases/download/v2.10.1/DeepSeek-Harness-Move-2.10.1-arm64.apk",
     "universal": "https://ghfast.top/https://github.com/MRStudioGame/dsh-move/releases/download/v1.4.0/DeepSeek-Harness-Move-1.4.0-universal.apk"
   },
-  "sha256_arm64": "c625eab234c12fcc21e7c6fc9a094a2bf0e101c791f14f6a1f7df9bc6294e7e0",
+  "sha256_arm64": "ed16b0df0eba07fb2b65445d6942c26c71b1ba4120966db0efa8d347f4882d3f",
   "size_arm64": 39658779,
-  "md5_arm64": "267cf27365bdc83207f272c880c5cf7f",
+  "md5_arm64": "d084bda2083f7c98b4947a367876c17f",
   "archiveOnly": true,
   "clientUpdateSource": "https://mrstudiogame.github.io/dsh-admin/api/app-version.json"
 }
