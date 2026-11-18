@@ -19,7 +19,7 @@
   <div class="nav-inner">
     <a class="brand" href="#top">
       <span class="brand-icon"><img src="assets/app-icon.png" alt="DSH Move 图标"></span>
-      <span class="brand-name">DeepSeek Harness <em>Move</em></span>
+      <span class="brand-name">DSH-Move</span>
     </a>
     <nav class="nav-links">
       <a href="#features">功能</a>
@@ -70,7 +70,7 @@
           <div class="app-bar">
             <span class="app-logo"><img src="assets/app-icon.png" alt=""></span>
             <div class="app-title">
-              <b>DeepSeek Harness</b>
+              <b>DSH-Move</b>
               <i>● 已连接</i>
             </div>
           </div>
@@ -454,7 +454,7 @@
     </details>
     <details>
       <summary>与 DeepSeek 官方是什么关系？</summary>
-      <p>本应用为独立开发的 DeepSeek Harness 移动客户端，与 DeepSeek 官方无隶属关系；相关名称与标识归其权利人所有。</p>
+      <p>本应用为独立开发的 DSH-Move 移动客户端，与 DeepSeek 官方无隶属关系；相关名称与标识归其权利人所有。</p>
     </details>
   </div>
 </section>
@@ -479,6 +479,27 @@
 // 导航滚动加深背景
 const nav = document.querySelector('.nav');
 addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 24), {passive: true});
+
+// 隐藏入口：连续点击左上角软件图标 5 次，进入管理员网页。
+// 不显示任何提示；2 秒内未继续点击自动清零，避免误触。
+(function () {
+  var icon = document.querySelector('.nav .brand-icon');
+  if (!icon) return;
+  var hits = 0;
+  var timer = 0;
+  icon.addEventListener('click', function (e) {
+    hits += 1;
+    clearTimeout(timer);
+    timer = setTimeout(function () { hits = 0; }, 2000);
+    if (hits >= 5) {
+      hits = 0;
+      clearTimeout(timer);
+      e.preventDefault();
+      e.stopPropagation();
+      window.open('https://mrstudiogame.github.io/dsh-admin/', '_blank', 'noopener');
+    }
+  });
+})();
 </script>
 <!-- 微信内置浏览器下载引导：微信里点下载不会真的下载，先教用户「用浏览器打开」 -->
 <div id="wx-guide" class="wx-guide">
