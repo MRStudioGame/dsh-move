@@ -41,7 +41,7 @@
   <div class="hero-inner">
     <div class="hero-copy">
       <div class="hero-badge">
-        <span class="dot"></span> v2.10.3 正式版已发布
+        <span class="dot"></span> v2.14.3 正式版已发布
       </div>
       <h1>把 <span class="grad">DeepSeek&nbsp;Harness</span><br>装进口袋。</h1>
       <p class="hero-sub">
@@ -163,21 +163,21 @@
       <h3>arm64-v8a</h3>
       <p class="dl-desc">适用于近十年内几乎所有手机与平板，体积更小、安装更快。</p>
       <div class="dl-info">
-        <span>v2.10.3 (21003)</span><span>37.8 MB</span><span>Android 8.0+</span>
+        <span>v2.14.3 (21403)</span><span>42.8 MB</span><span>Android 8.0+</span>
       </div>
-      <a class="btn btn-primary btn-block" data-dl href="https://ghfast.top/https://github.com/MRStudioGame/dsh-move/releases/download/v2.10.3/DeepSeek-Harness-Move-2.10.3-arm64.apk" download>
+      <a class="btn btn-primary btn-block" data-dl href="https://ghfast.top/https://github.com/MRStudioGame/dsh-move/releases/download/v2.14.3/DeepSeek-Harness-Move-2.14.3-arm64.apk" download>
         高速下载 arm64 APK
       </a>
       <div class="dl-alt">
         <span>下载慢？换通道：</span>
-        <a data-dl href="https://github.com/MRStudioGame/dsh-move/releases/download/v2.10.3/DeepSeek-Harness-Move-2.10.3-arm64.apk" download>Pages 直连</a>
-        <a data-dl href="https://github.com/MRStudioGame/dsh-move/releases/download/v2.10.3/DeepSeek-Harness-Move-2.10.3-arm64.apk" download>GitHub 原始地址</a>
+        <a data-dl href="https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-2.14.3-arm64.apk" download>Pages 直连</a>
+        <a data-dl href="https://github.com/MRStudioGame/dsh-move/releases/download/v2.14.3/DeepSeek-Harness-Move-2.14.3-arm64.apk" download>GitHub 原始地址</a>
       </div>
-      <div class="dl-sha">SHA-256：<code id="sha-arm64">ea4bff888884f9aaa2373e1fcff4910269594c15d2b3ebb9d76b8c62e88ee15a</code></div>
+      <div class="dl-sha">SHA-256：<code id="sha-arm64">4b2dd757a4110028839cb8c027a40d722e6f346318841b74eeecf036aa36386a</code></div>
     </div>
     <div class="dl-card">
       <h3>关于架构</h3>
-      <p class="dl-desc">本次 2.10.3 仅发布 arm64-v8a 包（覆盖近十年几乎所有机型，体积更小、安装更快）。
+      <p class="dl-desc">本次 2.14.3 仅发布 arm64-v8a 包（覆盖近十年几乎所有机型，体积更小、安装更快）。
       2017 年前的老设备（armeabi-v7a）可继续使用 1.4.0 通用包。</p>
       <div class="dl-info">
         <span>arm64-v8a</span><span>Android 8.0+</span>
@@ -202,6 +202,14 @@
     <p>应用内「关于 → 检查更新」只读取管理端版本接口，并在 App 内直接下载 APK；客户端已移除官网备用通道，任何更新分支都不会跳转官网或打开浏览器。</p>
   </div>
   <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-ver">v2.14.3 <span class="tl-date">2026-11-19</span></div>
+      <ul>
+        <li><b>更新模块手动检查修复</b>：线上版本清单低于本机版本时，不再误报「已是最新」，改为提示「当前版本高于线上清单」，并展示双方版本 / 构建号与发布通道可能未同步的说明</li>
+        <li><b>更新链路回归</b>：冷启动自动检查、后台回前台自动检查、35 秒总时限、失败 6 小时节流、三端点并发择优、MD5 / SHA-256 校验、断点续传与安装引导逐项验证</li>
+        <li><b>版本号</b>：2.14.3 (21403)，arm64-v8a</li>
+      </ul>
+    </div>
     <div class="tl-item">
       <div class="tl-ver">v2.10.3 <span class="tl-date">2026-11-18</span></div>
       <ul>
