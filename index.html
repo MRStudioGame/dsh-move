@@ -41,7 +41,7 @@
   <div class="hero-inner">
     <div class="hero-copy">
       <div class="hero-badge">
-        <span class="dot"></span> v2.14.5 正式版已发布
+        <span class="dot"></span> v2.15.0 正式版已发布
       </div>
       <h1>把 <span class="grad">DeepSeek&nbsp;Harness</span><br>装进口袋。</h1>
       <p class="hero-sub">
@@ -163,19 +163,19 @@
       <h3>arm64-v8a</h3>
       <p class="dl-desc">适用于近十年内几乎所有手机与平板，体积更小、安装更快。</p>
       <div class="dl-info">
-        <span>v2.14.5 (21405)</span><span>42.8 MB</span><span>Android 8.0+</span>
+        <span>v2.15.0 (21500)</span><span>42.8 MB</span><span>Android 8.0+</span>
       </div>
-      <a class="btn btn-primary btn-block" data-dl href="https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-2.14.5-arm64.apk" download>
+      <a class="btn btn-primary btn-block" data-dl href="https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-2.15.0-arm64.apk" download>
         下载 arm64 APK
       </a>
       <div class="dl-alt">
         <span>下载通道：GitHub Pages 直连 · 已校验 SHA-256 · 如失败请刷新页面重试</span>
       </div>
-      <div class="dl-sha">SHA-256：<code id="sha-arm64">a66b9a90ad754cf2105f971a44a1f06414bc47c422c55a6949d5f4367ef37193</code></div>
+      <div class="dl-sha">SHA-256：<code id="sha-arm64">92196ecf658ec07aefbb2ae99db4875f3cc2dda56eb78456725297b86b5940cf</code></div>
     </div>
     <div class="dl-card">
       <h3>关于架构</h3>
-      <p class="dl-desc">本次 2.14.5 仅发布 arm64-v8a 包（覆盖近十年几乎所有机型，体积更小、安装更快）。
+      <p class="dl-desc">本次 2.15.0 仅发布 arm64-v8a 包（覆盖近十年几乎所有机型，体积更小、安装更快）。
       2017 年前的老设备（armeabi-v7a）可继续使用 1.4.0 通用包。</p>
       <div class="dl-info">
         <span>arm64-v8a</span><span>Android 8.0+</span>
@@ -201,11 +201,22 @@
   </div>
   <div class="timeline">
     <div class="tl-item">
-      <div class="tl-ver">v2.14.5 <span class="tl-date">2026-11-19</span></div>
+      <div class="tl-ver">v2.15.0 <span class="tl-date">2026-11-19</span></div>
+      <ul>
+        <li><b>会话级设备控制权</b>：设备任务不再按单句关键词判定，改为会话级运行模式；首轮打开应用后，后续“继续 / 下一步 / next / 再点一下”仍由本机无障碍执行器接管，不会掉回模型</li>
+        <li><b>自然对话结果</b>：任务结果改为结论先行的自然语言，正文彻底移除执行流程表、自检表与统计表；坐标、OCR 证据只进调试日志</li>
+        <li><b>假成功修复</b>：未识别的指令不再“截一张屏就报任务完成”，改为明确提示没理解；只有用户要求看屏幕/截图时才读取屏幕</li>
+        <li><b>英文指令</b>：open / launch / start 可被意图解析和应用库正确识别，实测 open settings 真实打开系统设置</li>
+        <li><b>版本号</b>：2.15.0 (21500)，arm64-v8a</li>
+      </ul>
+    </div>
+    
+    <div class="tl-item">
+      <div class="tl-ver">v2.15.0 <span class="tl-date">2026-11-19</span></div>
       <ul>
         <li><b>更新模块手动检查修复</b>：线上版本清单低于本机版本时，不再误报「已是最新」，改为提示「当前版本高于线上清单」，并展示双方版本 / 构建号与发布通道可能未同步的说明</li>
         <li><b>更新链路回归</b>：冷启动自动检查、后台回前台自动检查、35 秒总时限、失败 6 小时节流、三端点并发择优、MD5 / SHA-256 校验、断点续传与安装引导逐项验证</li>
-        <li><b>版本号</b>：2.14.5 (21405)，arm64-v8a</li>
+        <li><b>版本号</b>：2.15.0 (21500)，arm64-v8a</li>
       </ul>
     </div>
     <div class="tl-item">
