@@ -2,20 +2,20 @@
   "app": "DSH-Move",
   "package": "com.dshmove.app",
   "channel": "stable",
-  "version": "2.15.3",
-  "build": 21503,
+  "version": "2.15.4",
+  "build": 21504,
   "minSdk": 26,
   "date": "2026-11-20",
-  "notes": "v2.15.3：侧边栏四组折叠与会话区渐隐、积分签到/消耗流水/均衡模型扣费展示、工作模式双语复合指令与 MIUI 首启确认自动放行。",
+  "notes": "v2.15.4：侧边栏四组折叠、会话列表只展示完整行、积分签到/消耗流水/均衡模型扣费展示、工作模式双语复合指令与 MIUI 首启确认自动放行。",
   "apks": {
-    "arm64": "https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-2.15.3-arm64.apk",
-    "arm64_pages": "https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-2.15.3-arm64.apk",
-    "arm64_github": "https://raw.githubusercontent.com/MRStudioGame/dsh-move/main/dl/DeepSeek-Harness-Move-2.15.3-arm64.apk",
+    "arm64": "https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-2.15.4-arm64.apk",
+    "arm64_pages": "https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-2.15.4-arm64.apk",
+    "arm64_github": "https://raw.githubusercontent.com/MRStudioGame/dsh-move/main/dl/DeepSeek-Harness-Move-2.15.4-arm64.apk",
     "universal": "https://ghfast.top/https://github.com/MRStudioGame/dsh-move/releases/download/v1.4.0/DeepSeek-Harness-Move-1.4.0-universal.apk"
   },
-  "sha256_arm64": "8911461f8e9d08d1398e90b757f1a6e1ee3cc8f9b201953cc8370b3975f6d87f",
+  "sha256_arm64": "e5963fa7935b6de2951759b818f11422216cde9c66353ae25dd3c6bba9270a9b",
   "size_arm64": 44958265,
-  "md5_arm64": "dceaf67ca219b8a33e00a04d482ddd90",
+  "md5_arm64": "346cbfa8a8522c4aac6914e059b0629f",
   "archiveOnly": false,
   "clientUpdateSource": "https://mrstudiogame.github.io/dsh-admin/api/app-version.json"
 }
