@@ -41,7 +41,7 @@
   <div class="hero-inner">
     <div class="hero-copy">
       <div class="hero-badge">
-        <span class="dot"></span> v2.15.11 正式版已发布
+        <span class="dot"></span> v2.16.1 正式版已发布
       </div>
       <h1>把 <span class="grad">DeepSeek&nbsp;Harness</span><br>装进口袋。</h1>
       <p class="hero-sub">
@@ -163,12 +163,12 @@
       <h3>arm64-v8a</h3>
       <p class="dl-desc">适用于近十年内几乎所有手机与平板，体积更小、安装更快。</p>
       <div class="dl-info">
-        <span>v2.15.11 (21511)</span><span>48.7 MB</span><span>Android 8.0+</span>
+        <span>v2.16.1 (21601)</span><span>48.7 MB</span><span>Android 8.0+</span>
       </div>
-      <a class="btn btn-primary btn-block" data-dl href="https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-2.15.11-arm64.apk" download>
+      <a class="btn btn-primary btn-block" data-dl href="https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-2.16.1-arm64.apk" download>
         下载 arm64 APK
       </a>
-      <a class="btn btn-ghost btn-block" style="margin-top:8px" href="https://gh-proxy.com/https://raw.githubusercontent.com/MRStudioGame/dsh-move/main/dl/DeepSeek-Harness-Move-2.15.11-arm64.apk" download>镜像加速下载（同一文件，已校验）</a>
+      <a class="btn btn-ghost btn-block" style="margin-top:8px" href="https://gh-proxy.com/https://raw.githubusercontent.com/MRStudioGame/dsh-move/main/dl/DeepSeek-Harness-Move-2.16.1-arm64.apk" download>镜像加速下载（同一文件，已校验）</a>
       <div class="dl-alt">
         <span>下载通道：GitHub Pages 直连 · 已校验 SHA-256 · 如失败请刷新页面重试</span>
       </div>
@@ -176,7 +176,7 @@
     </div>
     <div class="dl-card">
       <h3>关于架构</h3>
-      <p class="dl-desc">本次 2.15.11 仅发布 arm64-v8a 包（覆盖近十年几乎所有机型，体积更小、安装更快）。
+      <p class="dl-desc">本次 2.16.1 仅发布 arm64-v8a 包（覆盖近十年几乎所有机型，体积更小、安装更快）。
       2017 年前的老设备（armeabi-v7a）可继续使用 1.4.0 通用包。</p>
       <div class="dl-info">
         <span>arm64-v8a</span><span>Android 8.0+</span>
@@ -202,12 +202,16 @@
   </div>
   <div class="timeline">
     <div class="tl-item">
-      <div class="tl-ver">v2.15.11 <span class="tl-date">2026-11-20</span></div>
+      <div class="tl-ver">v2.16.1 <span class="tl-date">2026-11-20</span></div>
       <ul>
-        <li><b>Agent 工作模式验收</b>：10 条中文指令在真机逐条跑通——设置信息表格、备忘录写入与回查、快递短信诚实判断、天气阈值分支与 18:00 提醒、浏览器搜索三条来源、同名联系人保护、缺失应用替代方案、相册二维码隐私检测、7:30 闹钟标签验证、四项状态一句话汇总</li>
-        <li><b>外部页自动返回</b>：拉起设置、相册、时钟、浏览器前先排原生定时器，读取完成后自动回到 DSH，不再停在设置页、闹钟列表或浏览器</li>
-        <li><b>不再跑题</b>：搜索从失效的 Bing RSS 切到 360 网页结果，保留真实标题、摘要和来源链接；缺失应用不再误拉起浏览器搜索假包名</li>
-        <li><b>版本号</b>：2.15.11 (21511)，arm64-v8a</li>
+        <li><b>内置均衡账号彻底隐藏</b>：模型与密钥页不再出现任何 WorkBuddy 账号、登录或退出入口；「均衡」标注为内置，不可编辑、不可删除、不可更换，所有用户统一使用站方账号，无需登录或填写 Key</li>
+        <li><b>模型列表点选即切换</b>：点任意模型立即切换当前会话与默认模型，不再要求先进「管理 Key」；修复均衡模型无法切换到用户自建模型的问题</li>
+        <li><b>思考状态分离</b>：Agent 运行中只显示「思考中 / 请稍候」，隐藏节点、计数与展开箭头；任务完成后标题才变为「思考过程」并可展开回看，过程不混入正文</li>
+        <li><b>异常红字直出</b>：模型、网络与执行异常只在消息下方以红色错误条展示，不再写入思考节点、不再出现空白回复；失败原因随会话持久化，重开历史仍可见</li>
+        <li><b>管理端积分</b>：用户列表新增积分列与排序，支持直接设值或 +100/-50 增减，写审计日志并纳入详情与 CSV 导出</li>
+        <li><b>Agent 工作模式验收</b>：10 条中文指令真机逐条跑通——设置信息表格、备忘录写入与回查、快递短信诚实判断、天气阈值分支与 18:00 提醒、浏览器搜索三条来源、同名联系人保护、缺失应用替代方案、相册二维码隐私检测、7:30 闹钟标签验证、四项状态一句话汇总</li>
+        <li><b>显示修复</b>：主界面锁定竖屏，避免系统旋转后横向压缩、文字错位</li>
+        <li><b>版本号</b>：2.16.1 (21601)，arm64-v8a</li>
       </ul>
     </div>
     <div class="tl-item">
