@@ -3,23 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>DSH-Move 官方网站 · 把 DSH 装进口袋</title>
-<meta name="description" content="DSH-Move —— DSH 桌面端的官方安卓移动客户端。流式对话、工具调用、任务编排，随时随地继续你的工作。">
-<meta name="theme-color" content="#0A0E1C">
+<title>DSH-Move · 把 DSH 装进口袋</title>
+<meta name="description" content="DSH-Move —— DSH 桌面端的安卓移动客户端。流式对话、工具调用、真机 Agent 任务，随时随地继续你的工作。">
+<meta name="theme-color" content="#010102">
 <meta property="og:title" content="DSH-Move 官方网站">
-<meta property="og:description" content="DSH 的官方安卓移动客户端：流式对话 · 工具调用 · 任务编排">
+<meta property="og:description" content="DSH 的安卓移动客户端：流式对话 · 工具调用 · 真机 Agent">
 <meta property="og:image" content="assets/app-icon.png">
 <link rel="icon" type="image/png" href="assets/app-icon.png">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
-<!-- ============ 导航 ============ -->
+<!-- 导航 -->
 <header class="nav" id="top">
   <div class="nav-inner">
     <a class="brand" href="#top">
-      <span class="brand-icon"><img src="assets/app-icon.png" alt="DSH Move 图标"></span>
-      <span class="brand-name">DSH-Move</span>
+      <img src="assets/app-icon.png" alt="DSH-Move 图标">
+      <span>DSH-Move</span>
     </a>
     <nav class="nav-links">
       <a href="#features">功能</a>
@@ -27,524 +27,333 @@
       <a href="#changelog">更新日志</a>
       <a href="#faq">常见问题</a>
     </nav>
-    <a class="nav-cta" href="#download">立即下载</a>
+    <div class="nav-cta">
+      <a class="btn btn-secondary" href="#changelog">看更新</a>
+      <a class="btn btn-primary" href="#download">立即下载</a>
+    </div>
   </div>
 </header>
 
-<!-- ============ Hero ============ -->
+<!-- Hero -->
 <section class="hero">
-  <div class="hero-bg" aria-hidden="true">
-    <div class="orb orb-a"></div>
-    <div class="orb orb-b"></div>
-    <div class="grid-mask"></div>
-  </div>
-  <div class="hero-inner">
-    <div class="hero-copy">
-      <div class="hero-badge">
-        <span class="dot"></span> v2.16.1 正式版已发布
-      </div>
-      <h1>把 <span class="grad">DeepSeek&nbsp;Harness</span><br>装进口袋。</h1>
+  <div class="wrap hero-grid">
+    <div>
+      <div class="hero-badge"><i></i> v3.0.0 正式版已发布</div>
+      <h1>把 <span class="accent">DSH</span><br>装进口袋。</h1>
       <p class="hero-sub">
-        DSH 官方安卓移动客户端。与桌面端一致的流式对话体验、
-        完整的工具调用与任务编排能力，随时随地继续你的工作。
+        DSH 桌面端的安卓移动客户端。流式对话、工具调用、真机 Agent 任务——
+        手机上也能接着干活，而不只是聊天。
       </p>
       <div class="hero-actions">
-        <a class="btn btn-primary" href="#download">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
-          下载 Android 版
-        </a>
-        <a class="btn btn-ghost" href="#features">了解功能</a>
+        <a class="btn btn-primary" href="#download">下载 APK</a>
+        <a class="btn btn-secondary" href="#features">了解能力</a>
       </div>
       <ul class="hero-meta">
-        <li>Android 8.0+</li>
-        <li>安装包 37.8 MB 起</li>
-        <li>免费 · 无广告</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M4 21h16"/></svg>arm64-v8a · 49.0 MB</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8M8 11h8M8 15h5"/></svg>Android 8.0+</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 3l7 4v5c0 4-3 7-7 9-4-2-7-5-7-9V7z"/><path d="M9 12l2 2 4-4"/></svg>本地执行 · 数据不出设备</li>
       </ul>
     </div>
 
-    <!-- 手机预览 -->
-    <div class="hero-phone" aria-hidden="true">
-      <div class="phone">
-        <div class="phone-notch"></div>
-        <div class="phone-screen">
-          <div class="app-bar">
-            <span class="app-logo"><img src="assets/app-icon.png" alt=""></span>
-            <div class="app-title">
-              <b>DSH-Move</b>
-              <i>● 已连接</i>
-            </div>
-          </div>
-          <div class="chat">
-            <div class="msg user">帮我把项目里的 TODO 整理成周报</div>
-            <div class="msg ai">
-              <span class="avatar"><img src="assets/app-icon.png" alt=""></span>
-              <div class="bubble">
-                好的，我扫描了 <code>lib/</code> 与 <code>site/</code>，共找到 12 条 TODO，
-                已按「本周 / 下周 / 长期」分组——
-                <span class="cursor"></span>
-              </div>
-            </div>
-            <div class="tool-chip">
-              <span class="tool-dot"></span> read_dir · lib/ &nbsp;✓&nbsp;&nbsp;<span class="tool-dot"></span> grep · TODO &nbsp;✓
-            </div>
-          </div>
-          <div class="input-bar"><span>发消息…</span><i></i></div>
+    <div class="screen" aria-hidden="true">
+      <div class="screen-bar">
+        <img src="assets/app-icon.png" alt="">
+        <b>工作模式</b>
+        <small>3.0.0</small>
+      </div>
+      <div class="bubble user">把设置里的 WLAN 名字读出来</div>
+      <div class="bubble ai">
+        <div>进到设置了但还在首页，WLAN 应该在「网络与连接」下面。先扫一眼首屏有没有快捷入口。</div>
+      </div>
+      <div class="trace">
+        <div><span class="k">thought</span> · 当前在设置首页，未见 WLAN 入口</div>
+        <div><span class="k">intent</span> · 找到 WLAN 并读出已连接网络名</div>
+        <div><span class="k">action</span> · tap_text "网络与连接" &nbsp;<span class="ok">✓</span></div>
+      </div>
+      <div class="screen-input"><span>给 DSH 发消息…</span><span class="caret"></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 功能 -->
+<section class="section" id="features">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Capabilities</div>
+      <h2>不只是聊天，<br>是一个真正<span class="accent">能干活的客户端</span></h2>
+      <p>为移动场景重新设计的 DSH 运行时：轻、快、稳，动作都在本机发生。</p>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="4" y="6" width="16" height="12" rx="2"/><circle cx="9" cy="12" r="1.2"/><circle cx="15" cy="12" r="1.2"/><path d="M12 3v3"/></svg></div>
+        <h3>真机 Agent 任务</h3>
+        <p>一句话下发，手机自己动手：点击、输入、滑动、跨应用跳转，全部在本机执行，不上传屏幕。</p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><circle cx="12" cy="12" r="7"/><path d="M12 8v4l3 2"/></svg></div>
+        <h3>边看边走的执行</h3>
+        <p>每轮只做一个动作，做完先看结果再决定下一步；点错了会承认并换路，不做机械回放。</p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M4 17V7"/><path d="M4 12h6"/><path d="M10 7v10"/><path d="M14 17l3-10 3 10"/><path d="M15 14h4"/></svg></div>
+        <h3>纯文字输出</h3>
+        <p>结果用自然语言分点说清，不塞表格、不甩过程垃圾；数字与单位照屏幕原样。</p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 9h6M7 13h4"/></svg></div>
+        <h3>流式对话</h3>
+        <p>逐字输出、思考过程可展开，长回答不卡顿，随时中断、随时续写。</p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M4 7l8-4 8 4v10l-8 4-8-4z"/><path d="M4 7l8 4 8-4M12 11v10"/></svg></div>
+        <h3>工具调用可视</h3>
+        <p>文件读写、检索、多步骤任务的调用链路全程可见，过程透明，可随时叫停。</p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v5"/></svg></div>
+        <h3>离线 OCR</h3>
+        <p>中文识别模型随包内置，飞行模式照样读屏，截图与文字始终不出设备。</p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><path d="M16.5 13v7M13 16.5h7"/></svg></div>
+        <h3>插件系统</h3>
+        <p>核心能力锁定常驻，美化与娱乐插件自由开关、即点即生效，关掉即零开销。</p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M5 6h14M5 12h14M5 18h9"/></svg></div>
+        <h3>会话与工作区</h3>
+        <p>直接访问本机文件目录，配合精细权限管理；会话、配置全部留在设备上。</p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></div>
+        <h3>安全存储</h3>
+        <p>密钥与会话凭据经 Android Keystore 加密保存，卸载即销毁。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 下载 -->
+<section class="section" id="download">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Download</div>
+      <h2>下载 <span class="accent">DSH-Move</span></h2>
+      <p>从本页下载即代表你已阅读并同意《用户协议》与《隐私政策》（应用内可查看）。</p>
+    </div>
+
+    <div class="dl-grid">
+      <div class="dl-card featured">
+        <div class="dl-flag">推荐 · 正式版</div>
+        <h3>arm64-v8a</h3>
+        <p class="desc">适用于近十年内几乎所有手机与平板，体积更小、安装更快。</p>
+        <div class="dl-meta">
+          <span>v3.0.0 (30000)</span><span>49.0 MB</span><span>Android 8.0+</span>
+        </div>
+        <a class="btn btn-primary btn-block" data-dl href="https://ghfast.top/https://raw.githubusercontent.com/MRStudioGame/dsh-move/main/dl/DeepSeek-Harness-Move-3.0.0-arm64.apk" download>下载 APK</a>
+        <a class="btn btn-secondary btn-block" style="margin-top:8px" href="https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-3.0.0-arm64.apk" download>GitHub Pages 直连（同一文件）</a>
+        <div class="sha">SHA-256：<code>272d471604b39d1e93be72a12843ae600567115c054369732dd442a27411c56d</code><br>MD5：<code>0d2569e0559273b055c9fea4f291f424</code></div>
+      </div>
+
+      <div class="dl-card">
+        <div class="dl-flag">架构说明</div>
+        <h3>为什么只有 arm64</h3>
+        <p class="desc">3.0.0 仅发布 arm64-v8a 包，覆盖近十年机型，体积更小、安装更快。2017 年前的老设备可继续使用 1.4.0 通用包。</p>
+        <div class="dl-meta"><span>arm64-v8a</span><span>Android 8.0+</span></div>
+        <a class="btn btn-secondary btn-block" href="https://ghfast.top/https://github.com/MRStudioGame/dsh-move/releases/download/v1.4.0/DeepSeek-Harness-Move-1.4.0-universal.apk" download>下载 v1.4.0 通用包</a>
+        <div class="sha">旧版通用包 SHA-256：<code>902c63c9ea44fa596b685f5b5055fa55dda458eda00ccba4141fed13e012ee85</code></div>
+      </div>
+
+      <div class="dl-card">
+        <div class="dl-flag">安装与更新</div>
+        <h3>三分钟上手</h3>
+        <p class="desc">首次安装需要在系统里允许「安装未知应用」；工作模式需手动开启无障碍服务，覆盖安装后系统会自动关掉，需要再开一次。</p>
+        <div class="dl-meta"><span>约 3 分钟</span><span>无需注册即可浏览</span></div>
+        <a class="btn btn-tertiary btn-block" href="#faq">看常见问题</a>
+        <div class="sha">更新走应用内「关于 → 检查更新」，读取版本清单并在 App 内下载校验，不跳浏览器。</div>
+      </div>
+    </div>
+
+    <div class="steps">
+      <div class="step"><b>STEP 01</b>下载 APK 文件</div>
+      <div class="step"><b>STEP 02</b>允许「安装未知应用」</div>
+      <div class="step"><b>STEP 03</b>安装后打开，按引导开启无障碍</div>
+    </div>
+  </div>
+</section>
+
+<!-- 更新日志 -->
+<section class="section" id="changelog">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Changelog</div>
+      <h2>更新日志</h2>
+      <p>应用内「关于 → 检查更新」只读管理端版本接口，并在 App 内直接下载 APK；任何分支都不会跳转官网或打开浏览器。</p>
+    </div>
+
+    <div class="log">
+      <div class="log-row">
+        <div class="log-meta">
+          <div class="ver">v3.0.0</div>
+          <span class="date">2026-11-22</span>
+          <span class="badge new">正式版</span>
+        </div>
+        <div class="log-body">
+          <ul>
+            <li><b>修复 P0：登录态丢失</b> —— 冷启动恢复票据的入口此前从未被调用，登录过的账号杀进程重开就变「未登录」，所有功能被登录门禁拦住。现在首帧前完成验签与账号还原</li>
+            <li><b>Agent 三拍重构</b> —— 每轮同一 JSON 输出 thought → intent → action；删除 review（上一轮结果已回传，复述属表演）</li>
+            <li><b>thought 松绑</b> —— 不设字数限制，允许犹豫、允许推翻自己、允许说「我不确定」，禁止写成周报模板</li>
+            <li><b>删除关键词方法论</b> —— 不再按「闹钟 / 天气 / 评论」等关键词硬插操作套路，方法论下沉到动作说明，由模型自己判断</li>
+            <li><b>tap_text 升为主路径</b> —— 按文字/描述点击优先，编号点击降为兜底，长任务不再因编号漂移点错</li>
+            <li><b>evidence 两级回查</b> —— 关键数字/金额/时间/数量逐字比对，其余描述按语义覆盖率判定，不再整句原文比对</li>
+            <li><b>步数 34 → 60</b> —— 到顶先要求收口而不是直接判死；finish 打回上限 3 → 5</li>
+            <li><b>权限弹窗三选一</b> —— 由「一律始终允许」改为按任务判断的「始终允许 / 仅本次 / 拒绝」</li>
+            <li><b>执行日志折叠</b> —— 任务结束后自动收成一行「任务完成 · 共 N 步」，点开才看全过程</li>
+          </ul>
         </div>
       </div>
-      <div class="phone-shadow"></div>
-    </div>
-  </div>
-</section>
 
-<!-- ============ 功能 ============ -->
-<section class="section" id="features">
-  <div class="section-head">
-    <h2>不只是聊天，<span class="grad">是一个真正能干活的客户端</span></h2>
-    <p>为移动场景重新设计的 DSH 运行时：轻、快、稳。</p>
-  </div>
-  <div class="cards">
-    <div class="card">
-      <div class="card-icon">🤖</div>
-      <h3>Agent 自动任务</h3>
-      <p>一句话下发任务，手机自己动手：点击、滑动、输入、跨应用跳转，全部在本机执行。</p>
-    </div>
-    <div class="card">
-      <div class="card-icon">🎯</div>
-      <h3>高速定位</h3>
-      <p>控件树优先 + 页面缓存复用，OCR 仅兜底；任务整条预规划连续执行，不再逐帧瞎找。</p>
-    </div>
-    <div class="card">
-      <div class="card-icon">🔍</div>
-      <h3>离线 OCR</h3>
-      <p>中文识别模型随包内置，飞行模式照样读屏，截图与文字始终不出设备。</p>
-    </div>
-    <div class="card">
-      <div class="card-icon">🧩</div>
-      <h3>插件系统</h3>
-      <p>核心能力锁定常驻，美化娱乐插件自由开关、即点即生效，关掉即零开销。</p>
-    </div>
-    <div class="card">
-      <div class="card-icon">🐳</div>
-      <h3>小鲸鱼余额</h3>
-      <p>输入框右上角趴一只小鲸鱼，点一下就能看当前模型的实时余额。</p>
-    </div>
-    <div class="card">
-      <div class="card-icon">⚡</div>
-      <h3>流式对话</h3>
-      <p>逐字输出、思维链可展开，长回答不卡顿，随时中断续写。</p>
-    </div>
-    <div class="card">
-      <div class="card-icon">🛠️</div>
-      <h3>工具调用</h3>
-      <p>文件读写、检索、多步骤任务的工具调用链路全程可视，过程透明可控。</p>
-    </div>
-    <div class="card">
-      <div class="card-icon">🗂️</div>
-      <h3>本地工作区</h3>
-      <p>直接访问本机文件目录，配合精细的权限管理，数据不出设备。</p>
-    </div>
-    <div class="card">
-      <div class="card-icon">🔐</div>
-      <h3>安全存储</h3>
-      <p>密钥与会话凭据全部经 Android Keystore 加密保存，卸载即销毁。</p>
-    </div>
-  </div>
-</section>
-
-<!-- ============ 下载 ============ -->
-<section class="section download" id="download">
-  <div class="section-head">
-    <h2>下载 <span class="grad">DSH-Move</span></h2>
-    <p>从本页下载即代表你已阅读并同意《用户协议》与《隐私政策》（应用内可查看）。</p>
-  </div>
-  <div class="dl-cards">
-    <div class="dl-card dl-primary">
-      <div class="dl-tag">推荐</div>
-      <h3>arm64-v8a</h3>
-      <p class="dl-desc">适用于近十年内几乎所有手机与平板，体积更小、安装更快。</p>
-      <div class="dl-info">
-        <span>v2.16.1 (21601)</span><span>48.7 MB</span><span>Android 8.0+</span>
+      <div class="log-row">
+        <div class="log-meta">
+          <div class="ver">v2.32.0</div>
+          <span class="date">2026-11-22</span>
+          <span class="badge">稳定</span>
+        </div>
+        <div class="log-body">
+          <ul>
+            <li><b>注册主链路修通</b> —— 设备绑定冲突不再另开二级弹窗，改为卡片内一行红字确认，点一下注销旧账号并重建</li>
+            <li><b>抽屉身份区可点</b> —— 未登录显示「未登录 · 点此注册 / 登录」，右侧按钮随登录态切换为「信息设置」</li>
+            <li><b>键盘完成即提交</b> —— 登录/注册输入框回车直接提交；任一输入改动即清旧的错误红字</li>
+          </ul>
+        </div>
       </div>
-      <a class="btn btn-primary btn-block" data-dl href="https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-2.16.1-arm64.apk" download>
-        下载 arm64 APK
-      </a>
-      <a class="btn btn-ghost btn-block" style="margin-top:8px" href="https://gh-proxy.com/https://raw.githubusercontent.com/MRStudioGame/dsh-move/main/dl/DeepSeek-Harness-Move-2.16.1-arm64.apk" download>镜像加速下载（同一文件，已校验）</a>
-      <div class="dl-alt">
-        <span>下载通道：GitHub Pages 直连 · 已校验 SHA-256 · 如失败请刷新页面重试</span>
-      </div>
-      <div class="dl-sha">SHA-256：<code id="sha-arm64">e5963fa7935b6de2951759b818f11422216cde9c66353ae25dd3c6bba9270a9b</code></div>
-    </div>
-    <div class="dl-card">
-      <h3>关于架构</h3>
-      <p class="dl-desc">本次 2.16.1 仅发布 arm64-v8a 包（覆盖近十年几乎所有机型，体积更小、安装更快）。
-      2017 年前的老设备（armeabi-v7a）可继续使用 1.4.0 通用包。</p>
-      <div class="dl-info">
-        <span>arm64-v8a</span><span>Android 8.0+</span>
-      </div>
-      <a class="btn btn-ghost btn-block" href="https://ghfast.top/https://github.com/MRStudioGame/dsh-move/releases/download/v1.4.0/DeepSeek-Harness-Move-1.4.0-universal.apk" download>
-        下载 v1.4.0 通用包
-      </a>
-      <div class="dl-sha">旧版通用包 SHA-256：<code id="sha-universal">902c63c9ea44fa596b685f5b5055fa55dda458eda00ccba4141fed13e012ee85</code></div>
-    </div>
-  </div>
-  <div class="dl-steps">
-    <div class="step"><b>1</b> 下载 APK 文件</div>
-    <div class="step"><b>2</b> 允许「安装未知应用」</div>
-    <div class="step"><b>3</b> 安装后打开即用</div>
-  </div>
-</section>
 
-<!-- ============ 更新日志 ============ -->
-<section class="section" id="changelog">
-  <div class="section-head">
-    <h2>更新日志</h2>
-    <p>应用内「关于 → 检查更新」只读取管理端版本接口，并在 App 内直接下载 APK；客户端已移除官网备用通道，任何更新分支都不会跳转官网或打开浏览器。</p>
-  </div>
-  <div class="timeline">
-    <div class="tl-item">
-      <div class="tl-ver">v2.16.1 <span class="tl-date">2026-11-20</span></div>
-      <ul>
-        <li><b>内置均衡账号彻底隐藏</b>：模型与密钥页不再出现任何 WorkBuddy 账号、登录或退出入口；「均衡」标注为内置，不可编辑、不可删除、不可更换，所有用户统一使用站方账号，无需登录或填写 Key</li>
-        <li><b>模型列表点选即切换</b>：点任意模型立即切换当前会话与默认模型，不再要求先进「管理 Key」；修复均衡模型无法切换到用户自建模型的问题</li>
-        <li><b>思考状态分离</b>：Agent 运行中只显示「思考中 / 请稍候」，隐藏节点、计数与展开箭头；任务完成后标题才变为「思考过程」并可展开回看，过程不混入正文</li>
-        <li><b>异常红字直出</b>：模型、网络与执行异常只在消息下方以红色错误条展示，不再写入思考节点、不再出现空白回复；失败原因随会话持久化，重开历史仍可见</li>
-        <li><b>管理端积分</b>：用户列表新增积分列与排序，支持直接设值或 +100/-50 增减，写审计日志并纳入详情与 CSV 导出</li>
-        <li><b>Agent 工作模式验收</b>：10 条中文指令真机逐条跑通——设置信息表格、备忘录写入与回查、快递短信诚实判断、天气阈值分支与 18:00 提醒、浏览器搜索三条来源、同名联系人保护、缺失应用替代方案、相册二维码隐私检测、7:30 闹钟标签验证、四项状态一句话汇总</li>
-        <li><b>显示修复</b>：主界面锁定竖屏，避免系统旋转后横向压缩、文字错位</li>
-        <li><b>版本号</b>：2.16.1 (21601)，arm64-v8a</li>
-      </ul>
-    </div>
-    <div class="tl-item">
-      <div class="tl-ver">v2.15.4 <span class="tl-date">2026-11-20</span></div>
-      <ul>
-        <li><b>侧边栏四组折叠</b>：插件生态、资源与自定义、积分、账号与系统默认收起，一次只展开一组，240ms 高度动画 + 箭头旋转；「Agent 自动任务」常驻，「归档会话」收进会话列表右上角「⋯ 更多」</li>
-        <li><b>会话区完整行</b>：抽屉菜单紧凑为 44dp 行高，展开分组时底部账号区不再被裁切；会话列表只展示完整行，最后一条的标题与时间不再被裁切或淡出遮挡</li>
-        <li><b>积分签到</b>：每个自然日签到一次发 5000 积分，按本地 0 点刷新，已签到后按钮置灰显示「已签到 · 明日再来」，到账写流水并轻提示</li>
-        <li><b>积分消耗记录</b>：按时间倒序显示年月日时分、消息摘要、会话、模型与本次扣分，顶部展示累计消耗；旧流水自动兼容显示「历史消耗记录」</li>
-        <li><b>均衡模型扣费</b>：仅「均衡」模型在回复下方显示「本次消耗：xx 积分」；发送前校验余额，余额不足拦截并引导充值，实际扣减=展示=流水</li>
-        <li><b>工作模式增强</b>：补齐英文与「then」复合指令解析，支持启动/主页/返回/最近任务/滑动/新建笔记/输入/点击/搜索，并自动放行 MIUI 首次启动应用确认框</li>
-        <li><b>版本号</b>：2.15.4 (21504)，arm64-v8a</li>
-      </ul>
-    </div>
-    <div class="tl-item">
-      <div class="tl-ver">v2.15.0 <span class="tl-date">2026-11-19</span></div>
-      <ul>
-        <li><b>会话级设备控制权</b>：设备任务不再按单句关键词判定，改为会话级运行模式；首轮打开应用后，后续“继续 / 下一步 / next / 再点一下”仍由本机无障碍执行器接管，不会掉回模型</li>
-        <li><b>自然对话结果</b>：任务结果改为结论先行的自然语言，正文彻底移除执行流程表、自检表与统计表；坐标、OCR 证据只进调试日志</li>
-        <li><b>假成功修复</b>：未识别的指令不再“截一张屏就报任务完成”，改为明确提示没理解；只有用户要求看屏幕/截图时才读取屏幕</li>
-        <li><b>英文指令</b>：open / launch / start 可被意图解析和应用库正确识别，实测 open settings 真实打开系统设置</li>
-        <li><b>版本号</b>：2.15.0 (21500)，arm64-v8a</li>
-      </ul>
-    </div>
-    
-    <div class="tl-item">
-      <div class="tl-ver">v2.15.0 <span class="tl-date">2026-11-19</span></div>
-      <ul>
-        <li><b>更新模块手动检查修复</b>：线上版本清单低于本机版本时，不再误报「已是最新」，改为提示「当前版本高于线上清单」，并展示双方版本 / 构建号与发布通道可能未同步的说明</li>
-        <li><b>更新链路回归</b>：冷启动自动检查、后台回前台自动检查、35 秒总时限、失败 6 小时节流、三端点并发择优、MD5 / SHA-256 校验、断点续传与安装引导逐项验证</li>
-        <li><b>版本号</b>：2.15.0 (21500)，arm64-v8a</li>
-      </ul>
-    </div>
-    <div class="tl-item">
-      <div class="tl-ver">v2.10.3 <span class="tl-date">2026-11-18</span></div>
-      <ul>
-        <li><b>DSH 同款思考抽屉</b>：助手消息上方常驻指示器，默认收起；点击或下拉展开、上滑收起，380ms 回弹。内部按意图、推理、规划、动作、观测、收尾分段流式展示完整 ReAct 链路，思考与最终回答分离</li>
-        <li><b>逐条思考缓存</b>：每条助手消息独立保存思考节点，随会话 JSON 持久化；切换会话、重启 App 后可下拉回看</li>
-        <li><b>对话 / 工作双模式</b>：输入框上方胶囊切换并持久化；对话模式不申请权限、不展示思考流；工作模式启用抽屉、校验真机权限、最终回复禁表格</li>
-        <li><b>首次启动模式引导</b>：自绘卡片选择【侧重对话】/【侧重工作】，工作模式立即走权限前置校验</li>
-        <li><b>无账号流程</b>：移除登录拦截与登录入口，本地身份统一走 ChatProfileStore，侧边固定【信息设置】</li>
-        <li><b>热配置增量</b>：冷启动 / 回前台静默拉取 hot-config.json，远程更新系统提示与工作模式约束，无需重装；代码与原生桥仍需安装包</li>
-        <li><b>弹窗统一动效</b>：面板 380ms 回弹、遮罩 12px 模糊；弹窗打开时聊天页缩至 0.94 并做 7px 模糊</li>
-        <li><b>修复</b>：个性自定义入口打不开、对话模式误弹无障碍引导</li>
-      </ul>
-    </div>
-    <div class="tl-item">
-      <div class="tl-ver">v2.9.0 <span class="tl-date">2026-11-17</span></div>
-      <ul>
-        <li><b>聊天外观个性化</b>：壁纸选择、遮罩 0–100、高斯模糊 0–25px、字号 12–24sp，5 套气泡配色与 4 种聊天样式，样式与配色联动约束；拖动实时预览，保存才落盘，取消自动回滚</li>
-        <li><b>信息设置</b>：侧边账号区【管理】改为【信息设置】，支持修改我方 / AI 名称、头像拍照 / 相册 / 恢复默认；保存后聊天列表局部差分刷新</li>
-        <li><b>个性自定义</b>：【插件市场】下方新增【个性自定义】入口，外观与背景主面板 + 配色 / 样式二级面板，统一自研弹窗动效与安全区适配</li>
-        <li><b>插件能力真实挂载</b>：插件开关接入真实工具（截图、控件树、原生悬浮提示），无原生支撑的能力如实标记，不再「开开关没功能」</li>
-        <li><b>持久化修复</b>：修复改头像会把名称写空、恢复默认头像误删名称；外观与身份改 EncryptedSharedPreferences 加密存储</li>
-      </ul>
-    </div>
-    <div class="tl-item">
-      <div class="tl-ver">v2.8.0 <span class="tl-date">2026-11-17</span></div>
-      <ul>
-        <li><b>底层身份重塑</b>：统一身份 charter 注入运行时权限状态，对话与规划器共用同一数据源</li>
-        <li><b>权限真实化</b>：移除假权限、开机保活、动态通知授权，权限失败如实报错</li>
-        <li><b>CoT 前置与状态机兜底</b>：执行前播报意图 / 拆解 / 权限 / 风险，关键通道 30s 超时，任务 20min 兜底</li>
-        <li><b>全链路 Tracing</b>：冷启动环境快照与异常栈落盘，弹窗高保真与风控后台可见</li>
-      </ul>
-    </div>
-    <div class="tl-item">
-      <div class="tl-ver">v2.5.0 <span class="tl-date">2026-11-15</span></div>
-      <ul>
-        <li><b>全链路观测性</b>：结构化调试日志矩阵按天落盘（探针 / UI 树 / 坐标点击 / 重试异常栈 / 动效时机 / 响应码 / 终态核对表），杜绝黑盒静默失败</li>
-        <li><b>动态动作流</b>：Agent 播报改为自然语言实时同步观察结果，废弃「第N步｜校验结果」机械化格式</li>
-        <li><b>自研 Toast 与双面板</b>：16 处原生 SnackBar 全量替换为自研轻提示；代码块改为 Code / Live Preview 对照渲染</li>
-        <li><b>插件操作符 Refresh</b>：市场 Update 系列全面替换为 Refresh，UI 文案统一「刷新」</li>
-        <li><b>管理端版本发布 / 插件生命周期</b>：新增 OTA 直链与 MD5 校验的发布管理、插件上架 / 灰度 / 下架与批量操作</li>
-        <li><b>彻底移除官网下载兜底</b>：删除官网 version.json 回落与把官网 #download 页面混入下载直链的逻辑，版本信息与 APK 直链只从管理端接口下发</li>
-        <li><b>全局禁止官网跳转</b>：更新链路不再引用任何官网地址，任何检查 / 下载 / 重试 / 失败分支都不跳转官网、不打开浏览器；关于页官网地址改为纯文本展示</li>
-        <li><b>异常捕获与统一提示</b>：接口请求失败、直链超时 / 404 / 无法拉取统一展示「更新资源获取失败，请稍后重试」，附失败原因与调试日志，提供「重新拉取」</li>
-        <li><b>下载重试与调试日志</b>：下载中断 / 链接失效时提供「重新拉取」「重新下载」，全程记录链接状态与 HTTP 响应码，面板可展开查看</li>
-        <li><b>直链内容防护</b>：仅接受 .apk 结尾的文件直链，响应为网页内容或 MD5 缺失 / 非法时直接判定清单无效</li>
-        <li><b>保持不变</b>：版本号 / 更新日志 / MD5 拉取、前台下载进度、暂停 / 取消、MD5 校验、安装引导与未知应用权限提示</li>
-      </ul>
-    </div>
-    <div class="tl-item">
-      <div class="tl-ver">v2.4.0 <span class="tl-date">2026-11-15</span></div>
-      <ul>
-        <li><b>全局登录状态分流</b>：账号昵称点击优先读取全局登录态；已登录拉起自研用户信息面板（账号名称 / 绑定设备 ID / 设备绑定信息 / 会话同步配置 / 退出登录），禁止再唤起登录弹窗；游客才走登录弹窗原始动画链路</li>
-        <li><b>统一自研弹窗容器</b>：全应用禁用原生弹窗组件，遮罩铺满全屏视口、消除四周黑边，卡片与遮罩渲染隔离保持文字锐利</li>
-        <li><b>登录弹窗前置状态校验</b>：已登录直接拦截渲染并写入调试日志，在场期间被外部登录会自动收起</li>
-        <li><b>App 内更新</b>：版本信息 / 更新日志 / APK 直链 / MD5 改由管理端版本接口下发，移除跳转官网下载</li>
-        <li><b>前台下载任务</b>：应用内进度面板与前台通知，支持暂停 / 继续 / 取消与断点续传；下载完成校验 MD5，引导开启「安装未知应用」权限后唤起系统安装器</li>
-        <li><b>更新弹窗文案</b>：提供「立即更新」「稍后提醒」，已是最新版本时给出明确提示</li>
-      </ul>
-    </div>
-    <div class="tl-item">
-      <div class="tl-ver">v2.3.0 <span class="tl-date">2026-11-15</span></div>
-      <ul>
-        <li><b>固化 Agent 常驻能力规约</b>：无障碍自动化引擎、控件识别、跨应用操控能力跨会话与多轮对话常驻，不会自动关闭、降级或失效</li>
-        <li><b>静默降级自愈</b>：上一轮自动化完成后本轮若被分流到纯文本应答，自动重置执行链路（清控件识别缓存、刷新应用库、重读权限与截图通道），强制回到真机模式</li>
-        <li><b>指令分流修正</b>：界面操作类指令一律走无障碍链路；仅「明确要求生成文件 / 导出文本 / 复制内容」才允许文本分支；取消长文本写入被误判为聊天的限制</li>
-        <li><b>三权限前置校验</b>：无障碍 / 悬浮窗 / 界面捕获逐项校验，缺项弹窗引导开启并重新读状态，不再直接放弃真机操作</li>
-        <li><b>失败上报与自检</b>：控件识别失败或重试耗尽统一输出【控件识别失败】且继续自动化链路；无论成功失败均输出执行日志、步骤校验结果与目标核对表</li>
-        <li><b>禁止自限</b>：聊天与规划两套系统提示词注入能力章程，禁止输出「无法操作 App」「建议导出 txt / 复制剪贴板」类应答</li>
-        <li>原有目标拆解、单步 3 次重试、终检核对表、按需确认/始终询问档位的跨应用全局确认弹窗、更新模块与全部业务逻辑保持不变</li>
-      </ul>
-    </div>
-    <div class="tl-item">
-      <div class="tl-ver">v2.2.2 <span class="tl-date">2026-11-13</span></div>
-      <ul>
-        <li><b>放宽密码规则</b>：注册密码由「8–32 位且必须同时含字母与数字」改为「4 位以上字母或数字（自由组合）」，仅要求长度 ≥ 4、字符限定为字母或数字，不再强制混合；登录与已注册账号不受影响</li>
-      </ul>
-    </div>
-    <div class="tl-item">
-      <div class="tl-ver">v2.2.1 <span class="tl-date">2026-11-12</span></div>
-      <ul>
-        <li><b>修复弹窗文字发虚</b>：登录/注册弹窗此前挂载在背景高斯模糊层内部，导致文字、输入框、Tab、按钮全部被虚化；现已改挂到模糊层之外的独立图层，弹窗内部恢复矢量锐利，仅保留外层背景模糊遮罩</li>
-        <li><b>动效与交互不变</b>：锚点缩放出场、380ms 弹性回弹、下拉拖拽销毁与回弹、层级配色布局全部保持原样，业务逻辑与校验逻辑零改动</li>
-      </ul>
-    </div>
-    <div class="tl-item">
-      <div class="tl-ver">v2.2.0 <span class="tl-date">2026-11-12</span></div>
-      <ul>
-        <li><b>账号体系</b>：游客免登录准入，冷启动不弹窗；点功能节点或提交请求才唤起认证，纯浏览不打扰</li>
-        <li><b>锚点形变弹窗</b>：从触发控件位置 0.3→1.0 弹性展开 380ms，背景同步缩放 0.94 + 亮度衰减 + 高斯模糊，下拉可拖拽销毁、未过阈值回弹，全局单实例</li>
-        <li><b>设备一对一绑定</b>：注册时按 DeviceId 校验，已绑定时先弹「你已有一个账号了！」，再走风险确认，【注销】按钮 5 秒倒计时锁灰，确认后注销原账号数据并重建绑定</li>
-        <li><b>JWT 全局鉴权</b>：登录签发票据本地持久化，业务请求统一携带 Authorization 与设备标识</li>
-        <li><b>Agent 全局悬浮确认</b>：始终询问 / 按需确认档位下，切到其他应用、桌面都能弹出确认卡片，30 秒无操作自动取消任务，缺少悬浮窗权限时直接停任务并提示去开启</li>
-        <li><b>入口调整</b>：顶栏右上角新增蓝底「登录」，抽屉底部新增用户信息区（账号 / 设备短码 / 登录退出）</li>
-      </ul>
-    </div>
-    <div class="tl-item">
-      <div class="tl-ver">v2.0.3 <span class="tl-date">2026-11-12</span></div>
-      <ul>
-        <li><b>输入区严格两行</b>：第一行恢复「加号 · 输入框 · 发送键」完整宽度，胶囊不再与输入框同排、不再挤压输入区</li>
-        <li><b>第二行三件套</b>：【始终询问】· 模型切换胶囊 ·【标准】，三者同一行，原有按钮位置样式功能不变</li>
-        <li><b>依附式下拉</b>：紧贴胶囊上方弹出、左边缘与胶囊对齐，去掉遮罩与页面弹窗，点面板外任意位置即收起</li>
-        <li><b>面板结构</b>：顶部「切换模型 / 只对当前对话生效 / Key 总数」，单行显示厂商图标、别名、模型 ID、余额与选中绿勾，条目多时内部滚动</li>
-        <li><b>底部操作</b>：并排的蓝色「+ 添加 Key」与白底「管理 Key」；无 Key 时提示「暂无可用 API 密钥，请点击添加 Key」</li>
-        <li><b>联动不变</b>：Key 与多模型路由同源、余额走小鲸鱼、切换只对当前对话生效，图标全部 SVG 矢量且支持自定义上传</li>
-      </ul>
-    </div>
-    <div class="tl-item">
-      <div class="tl-ver">v2.0.2 <span class="tl-date">2026-11-12</span></div>
-      <ul>
-        <li><b>发送键左侧模型切换胶囊</b>：输入框 → 模型胶囊 → 发送箭头，只新增不改动，操作许可、速度档位、输入框、发送键全部原位保留</li>
-        <li><b>厂商矢量图标</b>：DeepSeek、OpenAI、通义千问、Kimi、豆包等官方 SVG 内嵌，缩放不失真、随主题换色；未知厂商用中性几何图标，不用 emoji 与位图</li>
-        <li><b>向上弹出的 Key 面板</b>：宽度与输入框对齐，逐条显示别名、模型 ID、余额与当前选中对勾，三条余额状态（加载中 / 金额 / 获取失败）</li>
-        <li><b>会话级切换</b>：选中后只对当前对话生效，其他会话沿用各自模型；新会话首次发送才落定</li>
-        <li><b>Key 管理</b>：面板底部可添加 Key、打开管理面板，支持改别名、删除、拖拽排序、设为全局默认</li>
-        <li><b>模型表单增强</b>：新增别名输入与图标选择条，支持上传自定义 SVG（≤60KB）</li>
-      </ul>
-    </div>
-    <div class="tl-item">
-      <div class="tl-ver">v2.0.1 <span class="tl-date">2026-11-11</span></div>
-      <ul>
-        <li><b>菜单栏新增插件市场</b>：抽屉里「插件」下方多一条「插件市场」，两个入口并存、互不替代</li>
-        <li><b>插件页接管市场插件</b>：市场里安装的插件会自动出现在「插件 → 已安装插件」，与市场页共用同一份状态，实时同步</li>
-        <li><b>就地管理</b>：在插件页可直接开关、改参数、卸载，点「管理」打开与市场同款面板，也可一键跳回市场</li>
-        <li><b>未安装有引导</b>：还没装市场插件时给出「去插件市场安装」按钮，不会只留一片空白</li>
-      </ul>
-    </div>
-    <div class="tl-item">
-      <div class="tl-ver">v2.0.0 <span class="tl-date">2026-11-11</span></div>
-      <ul>
-        <li><b>DSH 同款插件市场</b>：七个 Tab（发现 / 主题 / 收藏 / 已安装 / 已屏蔽 / 高级 / 任务），搜索、分类、筛选、两列卡片、多图预览、安装 / 更新 / 管理 / 卸载齐全</li>
-        <li><b>插件内核</b>：34 个插件条目，安装状态、开关、参数、收藏、屏蔽全部本地持久化；核心插件锁定置灰，卸载即清空该插件配置</li>
-        <li><b>风控黑白名单</b>：内置银行与支付类黑名单，命中直接中断任务并弹风险提示；白名单开启后只允许名单内应用。优先级：黑名单 &gt; 白名单 &gt; 权限模式</li>
-        <li><b>执行速度档位</b>：极速 / 标准 / 慢速三档，全局默认 + 输入区一键切换，悬浮窗实时显示当前档位</li>
-        <li><b>性能模式</b>：高级页一键关闭全部美化与娱乐插件，关闭后不再占用渲染与计时</li>
-      </ul>
-    </div>
-    <div class="tl-item">
-      <div class="tl-ver">v1.9.0 <span class="tl-date">2026-11-11</span></div>
-      <ul>
-        <li><b>启动自动检查更新</b>：进入应用即静默拉取官网版本清单，与启动动画并行，不占用进入主界面的时间</li>
-        <li><b>发现新版弹窗</b>：标题写明新版本号，展示当前版本 → 最新版本的对比、更新内容与安装包体积</li>
-        <li><b>一键去更新</b>：点「立即更新」自动走高速通道下载；「以后再说」后同一版本 12 小时内不再打扰</li>
-        <li><b>断网不打扰</b>：超时、无网络、清单异常一律静默跳过，不弹错误、不拖慢启动</li>
-        <li><b>设置页统一</b>：关于页「检查更新」复用同一套解析与比对，不会出现两处结论不一致</li>
-      </ul>
-    </div>
-    <div class="tl-item">
-      <div class="tl-ver">v1.8.0 <span class="tl-date">2026-11-11</span></div>
-      <ul>
-        <li><b>目标清单拆解</b>：收到指令先拆出全部必达目标，「并且 / 接着 / 然后 / 同时 / 再 / 之后」连接的每个动作都成为一条独立目标，日志里先列清单再动手</li>
-        <li><b>逐步后置校验</b>：每次点击、输入、滑动、启动、返回之后都截一张图核对——启动看是否脱离加载页、点击看页面有没有变化、输入看文字是否真的落进输入框</li>
-        <li><b>失败自动重试</b>：单步校验不过自动重试，最多 3 次；3 次仍失败立即中断任务，写明卡在哪一步</li>
-        <li><b>全局终检</b>：全部动作跑完不直接收工，重新截图对照目标清单逐条核验，未达成项回退补做，最多 2 轮</li>
-        <li><b>不再提前打勾</b>：只有全项目标终检通过才出现 ✅ 任务完成，否则一律 ❌ 任务中断</li>
-        <li><b>报告新增自检表</b>：执行流程统一「第X步：动作｜校验结果：成功 / 失败」，并新增目标项 / 预期结果 / 终检核验结果三列的自检表，统计区增加目标达成情况</li>
-      </ul>
-    </div>
-    <div class="tl-item">
-      <div class="tl-ver">v1.7.0 <span class="tl-date">2026-11-10</span></div>
-      <ul>
-        <li><b>操作许可下拉</b>：输入框下方新增三档单选——始终询问 / 按需确认（默认）/ 全部允许，每项带 SVG 图标与说明小字，选择本地持久保存</li>
-        <li><b>始终询问</b>：点击、滑动、输入、截图、读屏、读写文件、网络请求逐次弹窗，弹窗写明操作、访问路径与风险</li>
-        <li><b>按需确认</b>：只对无障碍操控、读写文件、发送文件、外部网络请求弹窗，普通对话与插件余额查询直接放行</li>
-        <li><b>全部允许</b>：切换前二次风险确认，开启后自动化全程不再打扰</li>
-        <li><b>边界说明</b>：该开关只管应用内 Agent 行为，安卓无障碍 / 悬浮窗权限仍需在系统设置里手动开启</li>
-      </ul>
-    </div>
-    <div class="tl-item">
-      <div class="tl-ver">v1.6.0 <span class="tl-date">2026-11-08</span></div>
-      <ul>
-        <li><b>自动化顶部悬浮状态条</b>：执行时贴顶弹出一条磨砂长条，实时显示「正在启动备忘录应用 / 正在新建空白笔记 / 正在输入文本内容」，不是你原话；带「停止」按钮，长按可本次隐藏，报错转红</li>
-        <li><b>富文本任务报告</b>：任务结束输出「任务完成 + 执行流程 + 统计表 + 备注」结构，OCR 原文、截图文件名、函数名全部移出主界面</li>
-        <li><b>独立调试日志</b>：底层日志收进消息下方【调试日志】面板，默认收起，可单独导出 json</li>
-        <li><b>全格式导出</b>：txt / md / docx / pdf / xlsx / csv / png / jpg / svg / json / html 多选批量生成，带进度条，文件直接挂在消息里点开即下载</li>
-        <li><b>字号自定义 5 档</b>：超小 / 小 / 标准 / 大 / 超大，真实 fontSize；支持「标题超大、正文标准」单条混排、「调大一点」升降档，设置页可改全局默认</li>
-        <li><b>导出保留字号</b>：docx 每个 run 单独写尺寸，pdf 按真实字号渲染，不会全篇一个大小</li>
-        <li><b>执行流程折叠</b>：超过 6 步自动收起，点「展开全部执行流程」查看</li>
-      </ul>
-    </div>
-    <div class="tl-item">
-      <div class="tl-ver">v1.5.0 <span class="tl-date">2026-11-08</span></div>
-      <ul>
-        <li><b>手机操控核心补齐</b>：聊天里发「打开备忘录，写一篇桃花源记」会真的去点屏幕，不再只回一段文字</li>
-        <li><b>本机应用库</b>：枚举桌面应用建立「名称 ↔ 包名」表，「打开豆包 / 打开备忘录」直接命中，找不到会明确提示</li>
-        <li><b>无障碍全能力</b>：点击 / 长按 / 滑动 / 输入 / 返回 / Home / 最近任务 / 按控件选中点击 / 容器翻页</li>
-        <li><b>控件优先定位</b>：控件树 → 页面缓存 → 坐标兜底 → OCR，点不到控件才用坐标</li>
-        <li><b>输入三级兜底</b>：SET_TEXT → 聚焦重试 → 剪贴板粘贴，长文本也能写进笔记</li>
-        <li><b>启动校验</b>：拉起后轮询前台包名 5 秒，确认真的打开了才算成功</li>
-        <li><b>权限引导与保活</b>：启动自动检测无障碍并弹教程，常驻前台服务 + 电池白名单引导</li>
-        <li><b>修复</b>：API Key 输入框不再触发系统安全键盘；点「新任务」立刻切到新会话</li>
-      </ul>
-    </div>
-    <div class="tl-item">
-      <div class="tl-ver">v1.4.0 <span class="tl-date">2026-11-08</span></div>
-      <ul>
-        <li><b>Agent 自动任务</b>：原生无障碍驱动，点击 / 滑动 / 输入 / 拉起应用 / 读屏全本地执行</li>
-        <li><b>本地离线 OCR</b>：中文模型随包内置，断网可用，图片不外传</li>
-        <li><b>高速定位体系</b>：控件树优先 → 页面缓存 → OCR 兜底，任务整条预规划连续执行，不再逐帧瞎找</li>
-        <li><b>插件系统</b>：核心能力锁定常驻，美化娱乐插件自由开关、即开即用</li>
-        <li><b>小鲸鱼插件</b>：输入框右上角悬浮，点击查看当前模型实时余额</li>
-        <li><b>会话菜单改版</b>：左上角一键新任务，重命名 / 归档 / 删除，新增归档会话页</li>
-        <li><b>三态高级思考动画</b>：思考中 / 规划中 / 执行中，手绘粒子与光流，不卡顿</li>
-      </ul>
-    </div>
-    <div class="tl-item">
-      <div class="tl-ver">v1.0.2 <span class="tl-date">2026-11-07</span></div>
-      <ul>
-        <li>启动动画居中显示，修复偏左上的问题</li>
-        <li>API Key / Token 输入框改为明文输入，彻底杜绝系统「安全键盘」</li>
-        <li>安装包体积与稳定性优化</li>
-      </ul>
-    </div>
-    <div class="tl-item">
-      <div class="tl-ver">v1.0.1 <span class="tl-date">2026-11-07</span></div>
-      <ul>
-        <li>全新品牌鲸鱼标志，应用图标与启动动画全面焕新</li>
-        <li>新增高级开启动画（渐现 + 位移）</li>
-        <li>修复在系统无障碍列表中找不到本应用的问题</li>
-        <li>工作区权限默认放行本机文件，无需额外授权</li>
-        <li>全面移除安全键盘组件，输入体验更自然</li>
-      </ul>
-    </div>
-    <div class="tl-item">
-      <div class="tl-ver">v1.0.0 <span class="tl-date">2026-11-07</span></div>
-      <ul>
-        <li>首个公开版本</li>
-        <li>流式对话 · 工具调用 · 会话管理与本地工作区</li>
-      </ul>
+      <div class="log-row">
+        <div class="log-meta">
+          <div class="ver">v2.16.1</div>
+          <span class="date">2026-11-20</span>
+          <span class="badge">稳定</span>
+        </div>
+        <div class="log-body">
+          <ul>
+            <li><b>内置账号隐藏</b> —— 模型与密钥页不再出现任何站方账号、登录或退出入口，统一使用内置均衡模型</li>
+            <li><b>思考状态分离</b> —— 运行中只显示「思考中」，任务完成后才展开「思考过程」</li>
+            <li><b>异常红字直出</b> —— 模型与执行异常只在消息下方红色错误条展示，失败原因随会话持久化</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="log-row">
+        <div class="log-meta">
+          <div class="ver">v2.15.4</div>
+          <span class="date">2026-11-20</span>
+          <span class="badge">稳定</span>
+        </div>
+        <div class="log-body">
+          <ul>
+            <li><b>侧边栏四组折叠</b> —— 插件生态、资源与自定义、积分、账号与系统一次只展开一组，Agent 自动任务常驻</li>
+            <li><b>积分体系</b> —— 每日签到、消耗流水、余额不足拦截，扣减与展示一致</li>
+            <li><b>工作模式增强</b> —— 补齐英文与复合指令，自动放行系统首次启动确认框</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="log-row">
+        <div class="log-meta">
+          <div class="ver">v1.4.0</div>
+          <span class="date">2026-11-08</span>
+          <span class="badge">里程碑</span>
+        </div>
+        <div class="log-body">
+          <ul>
+            <li><b>真机自动化首版</b> —— 无障碍驱动点击 / 滑动 / 输入 / 拉起应用 / 读屏，全程本机执行</li>
+            <li><b>离线 OCR</b> —— 中文模型随包内置，断网可用，图片不外传</li>
+            <li><b>插件系统与小鲸鱼</b> —— 核心能力常驻，余额插件悬浮可查</li>
+          </ul>
+          <div class="log-more">更早版本（1.0.0 – 2.10.3）的逐条记录保留在应用内「关于 → 更新日志」。</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ============ FAQ ============ -->
+<!-- FAQ -->
 <section class="section" id="faq">
-  <div class="section-head">
-    <h2>常见问题</h2>
-  </div>
-  <div class="faq-list">
-    <details>
-      <summary>安装时提示「未知来源」怎么办？</summary>
-      <p>这是 Android 对非应用商店安装包的标准提示。在系统弹窗中选择「允许」即可；部分机型需要在「设置 → 应用 → 特殊权限 → 安装未知应用」中放行你的浏览器或文件管理器。</p>
-    </details>
-    <details>
-      <summary>应用会收集我的数据吗？</summary>
-      <p>本应用不内置任何数据采集。会话记录与配置仅保存在你的设备本地，凭据经系统级加密存储。详见应用内「关于 → 隐私政策」。</p>
-    </details>
-    <details>
-      <summary>如何检查更新？</summary>
-      <p>打开应用「设置 → 关于 → 检查更新」，应用会读取管理端版本接口并在 App 内下载、校验 MD5 后引导安装，不会跳转官网或打开浏览器；也可以直接在本页手动下载最新 APK 覆盖安装。</p>
-    </details>
-    <details>
-      <summary>与 DeepSeek 官方是什么关系？</summary>
-      <p>本应用为独立开发的 DSH-Move 移动客户端，与 DeepSeek 官方无隶属关系；相关名称与标识归其权利人所有。</p>
-    </details>
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">FAQ</div>
+      <h2>常见问题</h2>
+    </div>
+    <div class="faq">
+      <details open>
+        <summary>安装时提示「未知来源」怎么办？</summary>
+        <p>这是 Android 对非应用商店安装包的标准提示。在系统弹窗中选择「允许」即可；部分机型需要在「设置 → 应用 → 特殊权限 → 安装未知应用」中放行你的浏览器或文件管理器。</p>
+      </details>
+      <details>
+        <summary>应用会收集我的数据吗？</summary>
+        <p>本应用不内置任何数据采集。会话记录与配置仅保存在你的设备本地，凭据经系统级加密存储。详见应用内「关于 → 隐私政策」。</p>
+      </details>
+      <details>
+        <summary>工作模式为什么要求无障碍权限？</summary>
+        <p>Agent 要在真机上点击、输入、滑动，只能通过系统的无障碍服务完成，这也是唯一不 Root 的合法路径。权限只用于你下发的任务，屏幕内容不会上传；覆盖安装新版本后系统会自动关闭该服务，需要再开一次。</p>
+      </details>
+      <details>
+        <summary>如何检查更新？</summary>
+        <p>打开应用「设置 → 关于 → 检查更新」，应用读取管理端版本接口并在 App 内下载、校验后引导安装，不会跳转官网或打开浏览器；也可以直接在本页手动下载最新 APK 覆盖安装。</p>
+      </details>
+      <details>
+        <summary>与 DeepSeek 官方是什么关系？</summary>
+        <p>本应用为独立开发的 DSH-Move 移动客户端，与 DeepSeek 官方无隶属关系；相关名称与标识归其权利人所有。</p>
+      </details>
+    </div>
   </div>
 </section>
 
-<!-- ============ 页脚 ============ -->
+<!-- 尾部 CTA -->
+<div class="wrap">
+  <div class="cta">
+    <div>
+      <h2>把工具装进口袋</h2>
+      <p>v3.0.0 · arm64-v8a · 49.0 MB · Android 8.0+</p>
+    </div>
+    <a class="btn btn-primary" href="#download">下载 APK</a>
+  </div>
+</div>
+
+<!-- Footer -->
 <footer class="footer">
   <div class="footer-inner">
-    <div class="footer-brand">
-      <span class="brand-icon"><img src="assets/app-icon.png" alt=""></span>
-      <span>DSH-Move</span>
+    <div>
+      <a class="brand" href="#top">
+        <img src="assets/app-icon.png" alt="">
+        <span>DSH-Move</span>
+      </a>
+      <div class="footer-col"><a href="#download">下载正式版</a><a href="#changelog">查看更新日志</a></div>
     </div>
-    <nav class="footer-links">
+    <div class="footer-col">
+      <h4>产品</h4>
+      <a href="#features">功能</a>
       <a href="#download">下载</a>
-      <a href="#changelog">更新日志</a>
       <a href="#faq">常见问题</a>
-    </nav>
+    </div>
+    <div class="footer-col">
+      <h4>说明</h4>
+      <a href="#changelog">版本与通道</a>
+      <a href="#faq">隐私与权限</a>
+      <a href="#top">回到顶部</a>
+    </div>
     <p class="footer-note">© 2026 MR Studio · 本应用为独立开发作品，与 DeepSeek 官方无隶属关系，相关标识归其权利人所有。</p>
   </div>
 </footer>
 
 <script>
-// 导航滚动加深背景
+// 导航滚动态（仅调整底边对比，不加阴影/模糊）
 const nav = document.querySelector('.nav');
 addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 24), {passive: true});
-
-// 隐藏入口：连续点击左上角软件图标 5 次，进入管理员网页。
-// 不显示任何提示；2 秒内未继续点击自动清零，避免误触。
-(function () {
-  var icon = document.querySelector('.nav .brand-icon');
-  if (!icon) return;
-  var hits = 0;
-  var timer = 0;
-  icon.addEventListener('click', function (e) {
-    hits += 1;
-    clearTimeout(timer);
-    timer = setTimeout(function () { hits = 0; }, 2000);
-    if (hits >= 5) {
-      hits = 0;
-      clearTimeout(timer);
-      e.preventDefault();
-      e.stopPropagation();
-      window.open('https://mrstudiogame.github.io/dsh-admin/', '_blank', 'noopener');
-    }
-  });
-})();
 </script>
-<!-- 微信内置浏览器下载引导：微信里点下载不会真的下载，先教用户「用浏览器打开」 -->
+
+<!-- 微信内置浏览器下载引导 -->
 <div id="wx-guide" class="wx-guide">
   <div class="wx-tip">
     <div class="wx-arrow">&#8599;</div>
@@ -552,8 +361,7 @@ addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 24),
   </div>
   <div class="wx-card">
     <h4>微信里不能直接安装</h4>
-    <p>微信内置浏览器不支持下载 APK 安装包。请点右上角 <b>&#8943;</b>，
-      选择「在浏览器打开」，再点下载即可正常安装。</p>
+    <p>微信内置浏览器不支持下载 APK 安装包。请点右上角 <b>&#8943;</b>，选择「在浏览器打开」，再点下载即可正常安装。</p>
     <div class="wx-actions">
       <button id="wx-close" class="btn btn-primary">我知道了</button>
     </div>
@@ -564,43 +372,22 @@ addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 24),
   var ua = (navigator.userAgent || '').toLowerCase();
   var isWx = ua.indexOf('micromessenger') !== -1;
   if (!isWx) return;
-
   var mask = document.getElementById('wx-guide');
   if (!mask) return;
-
-  function show(e) {
-    if (e) { e.preventDefault(); e.stopPropagation(); }
-    mask.classList.add('on');
-  }
-
+  function show(e) { if (e) { e.preventDefault(); e.stopPropagation(); } mask.classList.add('on'); }
   function pickLink(el) {
     while (el && el !== document.body) {
-      if (el.tagName === 'A' &&
-          (el.hasAttribute('data-dl') || el.hasAttribute('download'))) {
-        return el;
-      }
+      if (el.tagName === 'A' && (el.hasAttribute('data-dl') || el.hasAttribute('download'))) return el;
       el = el.parentNode;
     }
     return null;
   }
-
-  document.addEventListener('click', function (e) {
-    if (pickLink(e.target)) show(e);
-  }, true);
-
-  // 有些 X5 内核下 capture 失效：再兜一层直接绑在链接上
+  document.addEventListener('click', function (e) { if (pickLink(e.target)) show(e); }, true);
   var links = document.querySelectorAll('a[data-dl], a[download]');
-  for (var i = 0; i < links.length; i++) {
-    links[i].addEventListener('click', show, false);
-  }
-
+  for (var i = 0; i < links.length; i++) links[i].addEventListener('click', show, false);
   var close = document.getElementById('wx-close');
-  if (close) {
-    close.addEventListener('click', function () { mask.classList.remove('on'); });
-  }
-  mask.addEventListener('click', function (e) {
-    if (e.target === mask) mask.classList.remove('on');
-  });
+  if (close) close.addEventListener('click', function () { mask.classList.remove('on'); });
+  mask.addEventListener('click', function (e) { if (e.target === mask) mask.classList.remove('on'); });
 })();
 </script>
 </body>
