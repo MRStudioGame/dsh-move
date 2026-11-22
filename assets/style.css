@@ -97,7 +97,7 @@ body{
 
 /* ---------- Hero ---------- */
 .hero{padding:80px 0 64px}
-.hero-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:var(--s-xxl);align-items:center}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:var(--s-xxl);align-items:center}
 .hero-badge{
   display:inline-flex;align-items:center;gap:8px;
   background:var(--surface-2);border:1px solid var(--hairline);
@@ -124,6 +124,7 @@ h1 .accent{color:var(--primary)}
 
 /* ---------- 产品界面面板（product-screenshot-card：16px 半径，surface-1） ---------- */
 .screen{
+  min-width:0;
   background:var(--surface-1);
   border:1px solid var(--hairline);
   border-radius:var(--r-xl);
@@ -149,6 +150,7 @@ h1 .accent{color:var(--primary)}
 }
 .bubble.ai{background:transparent;color:var(--ink-muted);font-size:13.5px}
 .trace{
+  min-width:0;overflow-wrap:anywhere;
   border:1px solid var(--hairline);border-radius:var(--r-lg);
   background:var(--surface-2);padding:10px 12px;
   font:400 12px/1.6 var(--f-mono);color:var(--ink-subtle);
@@ -174,7 +176,7 @@ h1 .accent{color:var(--primary)}
 .section-head p{font:400 16px/1.5 var(--f-text);color:var(--ink-subtle)}
 
 /* ---------- 功能卡：3-up，surface-1，12px ---------- */
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s-md)}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--s-md)}
 .card{
   background:var(--surface-1);border:1px solid var(--hairline);
   border-radius:var(--r-lg);padding:var(--s-lg);
@@ -196,7 +198,7 @@ h1 .accent{color:var(--primary)}
 .card p{font:400 14px/1.5 var(--f-text);color:var(--ink-subtle)}
 
 /* ---------- 下载：3-up，推荐卡 surface-2 ---------- */
-.dl-grid{display:grid;grid-template-columns:1.15fr 1fr 1fr;gap:var(--s-md);align-items:start}
+.dl-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr) minmax(0,1fr);gap:var(--s-md);align-items:start}
 .dl-card{
   background:var(--surface-1);border:1px solid var(--hairline);
   border-radius:var(--r-lg);padding:var(--s-lg);
@@ -346,11 +348,19 @@ h1 .accent{color:var(--primary)}
 /* ---------- 响应式 ---------- */
 @media (max-width:1024px){
   h1{font-size:56px;letter-spacing:-1.8px}
-  .hero-grid{grid-template-columns:1fr;gap:var(--s-xl)}
+  .hero-grid{grid-template-columns:minmax(0,1fr);gap:var(--s-xl)}
   .section-head h2{font-size:32px;letter-spacing:-.8px}
-  .cards{grid-template-columns:repeat(2,1fr)}
+  .cards{grid-template-columns:repeat(2,minmax(0,1fr))}
   .dl-grid{grid-template-columns:1fr 1fr}
   .dl-card.featured{grid-column:1/-1}
+}
+@media (max-width:768px){
+  html,body{overflow-x:hidden}
+  .nav-cta .btn-secondary{display:none}
+  .nav-cta .btn{padding:8px 12px}
+  .brand span{font-size:13px}
+  .hero-meta{gap:var(--s-sm);font-size:11px}
+  .hero-actions .btn{flex:1}
 }
 @media (max-width:768px){
   .wrap,.nav-inner,.footer{padding-left:var(--s-md);padding-right:var(--s-md)}
@@ -358,9 +368,9 @@ h1 .accent{color:var(--primary)}
   h1{font-size:40px;letter-spacing:-1px}
   .section{padding:64px 0}
   .section-head{margin-bottom:var(--s-xl)}
-  .cards,.dl-grid,.steps{grid-template-columns:1fr}
-  .log-row{grid-template-columns:1fr;gap:var(--s-sm)}
-  .footer-inner{grid-template-columns:1fr 1fr}
+  .cards,.dl-grid,.steps{grid-template-columns:minmax(0,1fr)}
+  .log-row{grid-template-columns:minmax(0,1fr);gap:var(--s-sm)}
+  .footer-inner{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
   .cta{padding:var(--s-lg)}
 }
 @media (max-width:480px){
