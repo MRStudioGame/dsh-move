@@ -96,7 +96,7 @@ body{
 .btn-block{width:100%}
 
 /* ---------- Hero ---------- */
-.hero{padding:var(--s-section) 0 var(--s-xxl)}
+.hero{padding:80px 0 64px}
 .hero-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:var(--s-xxl);align-items:center}
 .hero-badge{
   display:inline-flex;align-items:center;gap:8px;
@@ -187,7 +187,8 @@ h1 .accent{color:var(--primary)}
   display:flex;align-items:center;justify-content:center;
   margin-bottom:var(--s-md);
 }
-.card .ico svg{width:16px;height:16px;stroke:var(--primary)}
+.card .ico svg{width:18px;height:18px;stroke:var(--ink-subtle)}
+.card:hover .ico svg{stroke:var(--ink)}
 .card h3{
   font:500 22px/1.25 var(--f-display);letter-spacing:-.4px;
   margin-bottom:var(--s-xs);
@@ -212,10 +213,10 @@ h1 .accent{color:var(--primary)}
 }
 .dl-card .desc{font:400 14px/1.5 var(--f-text);color:var(--ink-subtle);margin-bottom:var(--s-md)}
 .dl-meta{
-  display:flex;flex-wrap:wrap;gap:var(--s-sm);
+  display:flex;flex-wrap:wrap;gap:var(--s-xs) var(--s-sm);
   padding:var(--s-sm) 0;margin-bottom:var(--s-md);
   border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline);
-  font:400 12px/1.4 var(--f-mono);color:var(--ink-subtle);
+  font:400 11.5px/1.5 var(--f-mono);color:var(--ink-subtle);
 }
 .sha{
   margin-top:var(--s-sm);font:400 11px/1.6 var(--f-mono);
