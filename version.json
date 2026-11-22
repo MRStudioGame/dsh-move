@@ -2,20 +2,19 @@
   "app": "DSH-Move",
   "package": "com.dshmove.app",
   "channel": "stable",
-  "version": "2.16.1",
-  "build": 21601,
+  "version": "3.0.0",
+  "build": 30000,
   "minSdk": 26,
-  "date": "2026-11-20",
-  "notes": "v2.16.1：修复输出异常红字丢失与横屏错位；内置「均衡」账号对用户完全隐藏且不可退出/更换；模型列表点一下即切换默认模型，修复均衡切不到自建模型；运行中只显示「思考中」，任务完成后才显示「思考过程」；管理端新增用户积分管理与审计。",
+  "date": "2026-11-22",
+  "notes": "v3.0.0 正式版：Agent 内核重写（thought/intent/action 三拍、删除关键词方法论、tap_text 主路径、evidence 两级回查、步数 60），并修复冷启动登录态丢失。",
   "apks": {
-    "arm64": "https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-2.16.1-arm64.apk",
-    "arm64_pages": "https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-2.16.1-arm64.apk",
-    "arm64_github": "https://raw.githubusercontent.com/MRStudioGame/dsh-move/main/dl/DeepSeek-Harness-Move-2.16.1-arm64.apk",
-    "universal": "https://ghfast.top/https://github.com/MRStudioGame/dsh-move/releases/download/v1.4.0/DeepSeek-Harness-Move-1.4.0-universal.apk"
+    "arm64": "https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-3.0.0-arm64.apk",
+    "arm64_pages": "https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-3.0.0-arm64.apk",
+    "arm64_github": "https://raw.githubusercontent.com/MRStudioGame/dsh-move/main/dl/DeepSeek-Harness-Move-3.0.0-arm64.apk"
   },
-  "sha256_arm64": "2a594dc6527556cd09fade575a3bca6338a0f9551fa24aa0df4cee45ebdbc8e0",
-  "size_arm64": 51107441,
-  "md5_arm64": "6a67056b73ddd54e281759ddd9f3c098",
+  "sha256_arm64": "272d471604b39d1e93be72a12843ae600567115c054369732dd442a27411c56d",
+  "size_arm64": 51371737,
+  "md5_arm64": "0d2569e0559273b055c9fea4f291f424",
   "archiveOnly": false,
   "clientUpdateSource": "https://mrstudiogame.github.io/dsh-admin/api/app-version.json"
 }
