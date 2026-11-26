@@ -50,8 +50,8 @@ body{
 
 .wrap{max-width:1280px;margin:0 auto;padding:0 var(--s-xl)}
 .eyebrow{
-  font:500 13px/1.3 var(--f-text);letter-spacing:.4px;
-  text-transform:uppercase;color:var(--ink-subtle);
+  font:400 12px/1.4 var(--f-mono);letter-spacing:0;
+  text-transform:none;color:var(--ink-tertiary);
 }
 
 /* ---------- Nav（top-nav 56px，canvas 底，发丝线分隔） ---------- */
@@ -107,7 +107,7 @@ body{
 .hero-badge i{width:6px;height:6px;border-radius:var(--r-pill);background:var(--success);display:block}
 h1{
   margin:var(--s-lg) 0 var(--s-md);
-  font:600 80px/1.05 var(--f-display);letter-spacing:-3px;
+  font:600 64px/1.12 var(--f-display);letter-spacing:-2px;
 }
 h1 .accent{color:var(--primary)}
 .hero-sub{
@@ -164,6 +164,34 @@ h1 .accent{color:var(--primary)}
   display:flex;align-items:center;justify-content:space-between;
 }
 .screen-input .caret{width:1px;height:14px;background:var(--ink-subtle)}
+
+/* 3.1 产品预览：思考折叠卡 / 计划清单 / 结论，都是 App 里真实存在的块 */
+.think-card{
+  border:1px solid var(--hairline);border-radius:var(--r-lg);
+  background:var(--surface-2);padding:12px 14px;margin-bottom:var(--s-sm);
+}
+.think-card .head{display:flex;align-items:center;gap:8px;font:500 13px/1.3 var(--f-text);color:var(--primary-hover)}
+.think-card .head svg{width:14px;height:14px;stroke:var(--primary-hover)}
+.think-card .sub{margin-top:4px;font:400 11px/1.5 var(--f-mono);color:var(--ink-tertiary)}
+.plan-card{
+  border:1px solid var(--hairline);border-radius:var(--r-lg);
+  background:var(--surface-2);padding:12px 14px;
+}
+.plan-card .title{display:flex;align-items:center;gap:8px;font:400 12px/1.4 var(--f-text);color:var(--ink-subtle)}
+.plan-card ol{list-style:none;margin:8px 0 0;display:flex;flex-direction:column;gap:6px}
+.plan-card li{display:flex;gap:8px;font:400 12.5px/1.5 var(--f-text);color:var(--ink-muted)}
+.plan-card li i{font:400 11px/1.6 var(--f-mono);font-style:normal;color:var(--ink-tertiary);min-width:14px}
+.screen-result{
+  margin-top:var(--s-sm);padding-left:10px;
+  border-left:2px solid rgba(94,106,210,.55);
+  font:400 13px/1.7 var(--f-text);color:var(--ink);
+}
+.screen-result b{font-weight:600;font-family:var(--f-mono)}
+.screen-foot{
+  margin-top:var(--s-md);display:flex;align-items:center;gap:8px;
+  font:400 11px/1.4 var(--f-mono);color:var(--ink-tertiary);
+}
+.screen-foot .live{width:5px;height:5px;border-radius:50%;background:var(--success)}
 
 /* ---------- Section 通用 ---------- */
 .section{padding:var(--s-section) 0;border-top:1px solid var(--hairline)}

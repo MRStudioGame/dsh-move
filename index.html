@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>DSH-Move · 把 DSH 装进口袋</title>
-<meta name="description" content="DSH-Move —— DSH 桌面端的安卓移动客户端。流式对话、工具调用、真机 Agent 任务，随时随地继续你的工作。">
+<title>DSH-Move · 会自己动手的安卓 Agent</title>
+<meta name="description" content="DSH-Move 是 DSH 的安卓客户端：一句话交代任务，它自己看屏幕、点控件、跨应用办完，过程实时摊开，结果用人话汇报。">
 <meta name="theme-color" content="#010102">
-<meta property="og:title" content="DSH-Move 官方网站">
-<meta property="og:description" content="DSH 的安卓移动客户端：流式对话 · 工具调用 · 真机 Agent">
+<meta property="og:title" content="DSH-Move · 会自己动手的安卓 Agent">
+<meta property="og:description" content="一句话交代 · 真机自己操作 · 过程与结论都看得见">
 <meta property="og:image" content="assets/app-icon.png">
 <link rel="icon" type="image/png" href="assets/app-icon.png">
 <link rel="stylesheet" href="assets/style.css">
@@ -38,15 +38,15 @@
 <section class="hero">
   <div class="wrap hero-grid">
     <div>
-      <div class="hero-badge"><i></i> v3.0.0 正式版已发布</div>
-      <h1>把 <span class="accent">DSH</span><br>装进口袋。</h1>
+      <div class="hero-badge"><i></i> v3.1.0 正式版已发布</div>
+      <h1>一句话交代完，<br><span class="accent">手机自己动手。</span></h1>
       <p class="hero-sub">
-        DSH 桌面端的安卓移动客户端。流式对话、工具调用、真机 Agent 任务——
-        手机上也能接着干活，而不只是聊天。
+        DSH 的安卓客户端。它先想、再说、列计划、再动手：
+        自己看屏幕、点控件、跨应用办事，过程实时摊开，结果用人话讲给你。
       </p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="#download">下载 APK</a>
-        <a class="btn btn-secondary" href="#features">了解能力</a>
+        <a class="btn btn-secondary" href="#features">看它怎么干活</a>
       </div>
       <ul class="hero-meta">
         <li><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M4 21h16"/></svg>arm64-v8a · 49.0 MB</li>
@@ -58,19 +58,33 @@
     <div class="screen" aria-hidden="true">
       <div class="screen-bar">
         <img src="assets/app-icon.png" alt="">
-        <b>工作模式</b>
-        <small>3.0.0</small>
+        <b>DSH · 工作模式</b>
+        <small>3.1.0</small>
       </div>
-      <div class="bubble user">把设置里的 WLAN 名字读出来</div>
-      <div class="bubble ai">
-        <div>进到设置了但还在首页，WLAN 应该在「网络与连接」下面。先扫一眼首屏有没有快捷入口。</div>
+      <div class="bubble user">打开计算器，算 91×37</div>
+
+      <div class="think-card">
+        <div class="head">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          思考过程 · 已推演 7 步
+        </div>
+        <div class="sub">点开回看每一步推理</div>
       </div>
-      <div class="trace">
-        <div><span class="k">thought</span> · 当前在设置首页，未见 WLAN 入口</div>
-        <div><span class="k">intent</span> · 找到 WLAN 并读出已连接网络名</div>
-        <div><span class="k">action</span> · tap_text "网络与连接" &nbsp;<span class="ok">✓</span></div>
+
+      <div class="plan-card">
+        <div class="title">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 6h13M8 12h13M8 18h13"/><path d="M3 6h.01M3 12h.01M3 18h.01"/></svg>
+          当前计划
+        </div>
+        <ol>
+          <li><i>1</i>打开计算器应用</li>
+          <li><i>2</i>输入 91×37 并查看结果</li>
+          <li><i>3</i>把结果用人话汇报</li>
+        </ol>
       </div>
-      <div class="screen-input"><span>给 DSH 发消息…</span><span class="caret"></span></div>
+
+      <div class="screen-result">计算器里显示的算式是 <b>91×37</b>，结果是 <b>3,367</b>。</div>
+      <div class="screen-foot"><span class="live"></span>工作模式 · 真机执行</div>
     </div>
   </div>
 </section>
@@ -79,8 +93,8 @@
 <section class="section" id="features">
   <div class="wrap">
     <div class="section-head">
-      <div class="eyebrow">Capabilities</div>
-      <h2>不只是聊天，<br>是一个真正<span class="accent">能干活的客户端</span></h2>
+      <div class="eyebrow">能做什么</div>
+      <h2>一台会自己<br><span class="accent">动手的手机</span></h2>
       <p>为移动场景重新设计的 DSH 运行时：轻、快、稳，动作都在本机发生。</p>
     </div>
 
@@ -92,8 +106,8 @@
       </div>
       <div class="card">
         <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><circle cx="6" cy="6" r="2"/><circle cx="18" cy="18" r="2"/><path d="M8 6h6a4 4 0 0 1 4 4v4"/><path d="M16 18H9"/></svg></div>
-        <h3>边看边走的执行</h3>
-        <p>每轮只做一个动作，做完先看结果再决定下一步；点错了会承认并换路，不做机械回放。</p>
+        <h3>想、说、计划、做</h3>
+        <p>先推演再开口，多步骤先列清单，做完一条看结果再决定下一步；点错了会承认并换路。</p>
       </div>
       <div class="card">
         <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M5 7h14"/><path d="M5 12h10"/><path d="M5 17h7"/></svg></div>
@@ -138,7 +152,7 @@
 <section class="section" id="download">
   <div class="wrap">
     <div class="section-head">
-      <div class="eyebrow">Download</div>
+      <div class="eyebrow">下载</div>
       <h2>下载 <span class="accent">DSH-Move</span></h2>
       <p>从本页下载即代表你已阅读并同意《用户协议》与《隐私政策》（应用内可查看）。</p>
     </div>
@@ -149,17 +163,17 @@
         <h3>arm64-v8a</h3>
         <p class="desc">适用于近十年内几乎所有手机与平板，体积更小、安装更快。</p>
         <div class="dl-meta">
-          <span>v3.0.0 (30000)</span><span>49.0 MB</span><span>Android 8.0+</span>
+          <span>v3.1.0 (31000)</span><span>49.0 MB</span><span>Android 8.0+</span>
         </div>
-        <a class="btn btn-primary btn-block" data-dl href="https://ghfast.top/https://raw.githubusercontent.com/MRStudioGame/dsh-move/main/dl/DeepSeek-Harness-Move-3.0.0-arm64.apk" download>下载 APK</a>
-        <a class="btn btn-secondary btn-block" style="margin-top:8px" href="https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-3.0.0-arm64.apk" download>GitHub Pages 直连（同一文件）</a>
-        <div class="sha">SHA-256：<code>272d471604b39d1e93be72a12843ae600567115c054369732dd442a27411c56d</code><br>MD5：<code>0d2569e0559273b055c9fea4f291f424</code></div>
+        <a class="btn btn-primary btn-block" data-dl href="https://ghfast.top/https://raw.githubusercontent.com/MRStudioGame/dsh-move/main/dl/DeepSeek-Harness-Move-3.1.0-arm64.apk" download>下载 APK</a>
+        <a class="btn btn-secondary btn-block" style="margin-top:8px" href="https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-3.1.0-arm64.apk" download>GitHub Pages 直连（同一文件）</a>
+        <div class="sha">SHA-256：<code>4e97c3b08444217aeeb09ce6c4131459597016730313e29c9449610b20e26284</code><br>MD5：<code>e950d0f1568f844d1799b0d1f4098fc1</code></div>
       </div>
 
       <div class="dl-card">
         <div class="dl-flag">架构说明</div>
         <h3>为什么只有 arm64</h3>
-        <p class="desc">3.0.0 仅发布 arm64-v8a 包，覆盖近十年机型，体积更小、安装更快。2017 年前的老设备可继续使用 1.4.0 通用包。</p>
+        <p class="desc">3.1.0 仅发布 arm64-v8a 包，覆盖近十年机型，体积更小、安装更快。2017 年前的老设备可继续使用 1.4.0 通用包。</p>
         <div class="dl-meta"><span>arm64-v8a</span><span>Android 8.0+</span></div>
         <a class="btn btn-secondary btn-block" href="https://ghfast.top/https://github.com/MRStudioGame/dsh-move/releases/download/v1.4.0/DeepSeek-Harness-Move-1.4.0-universal.apk" download>下载 v1.4.0 通用包</a>
         <div class="sha">旧版通用包 SHA-256：<code>902c63c9ea44fa596b685f5b5055fa55dda458eda00ccba4141fed13e012ee85</code></div>
@@ -187,12 +201,33 @@
 <section class="section" id="changelog">
   <div class="wrap">
     <div class="section-head">
-      <div class="eyebrow">Changelog</div>
+      <div class="eyebrow">版本记录</div>
       <h2>更新日志</h2>
       <p>应用内「关于 → 检查更新」只读管理端版本接口，并在 App 内直接下载 APK；任何分支都不会跳转官网或打开浏览器。</p>
     </div>
 
     <div class="log">
+      <div class="log-row">
+        <div class="log-meta">
+          <div class="ver">v3.1.0</div>
+          <span class="date">2026-11-27</span>
+          <span class="badge new">正式版</span>
+        </div>
+        <div class="log-body">
+          <ul>
+            <li><b>四维内核：想 · 说 · 计划 · 做</b> —— 每轮先给思考，再说清要干什么，多步骤时先列计划清单，最后才动手；四条线各自可见，不再混成一段</li>
+            <li><b>思考折叠卡</b> —— 长思考收进一张卡，标题写「已推演 N 步」，N 按真实轮次计数，点开能逐步回看</li>
+            <li><b>计划清单</b> —— 任务开始前列 2–4 条待办，执行中逐条勾掉，卡住时能看出卡在哪一步</li>
+            <li><b>报告改成人话</b> —— 失败时不再甩包名和堆栈，会说「卡在哪个界面、试过什么、下一步该怎么做」</li>
+            <li><b>提示词重写</b> —— 删掉靠关键词硬插的套路提示，改为动作说明 + 判断依据，模型自己决定走哪条路</li>
+            <li><b>思考档位 420 / 640 / 960 / 1800</b> —— 四档预算真实下发，短问答不浪费，长任务能想透</li>
+            <li><b>权限弹窗交回模型</b> —— 由「一律始终允许」改为按本次任务判断</li>
+            <li><b>上限调整</b> —— 60 轮、finish 打回 5 次、evidence 两级回查</li>
+            <li><b>界面细节</b> —— 思考卡 / 计划卡 / 页脚 / 发送键换成一套线性 SVG 图标；冷启动 11 个 store 并行读盘；卡死消息自动补终稿，不再留空卡</li>
+          </ul>
+        </div>
+      </div>
+
       <div class="log-row">
         <div class="log-meta">
           <div class="ver">v3.0.0</div>
@@ -282,7 +317,7 @@
 <section class="section" id="faq">
   <div class="wrap">
     <div class="section-head">
-      <div class="eyebrow">FAQ</div>
+      <div class="eyebrow">常见问题</div>
       <h2>常见问题</h2>
     </div>
     <div class="faq">
@@ -315,7 +350,7 @@
   <div class="cta">
     <div>
       <h2>把工具装进口袋</h2>
-      <p>v3.0.0 · arm64-v8a · 49.0 MB · Android 8.0+</p>
+      <p>v3.1.0 · arm64-v8a · 49.0 MB · Android 8.0+</p>
     </div>
     <a class="btn btn-primary" href="#download">下载 APK</a>
   </div>
