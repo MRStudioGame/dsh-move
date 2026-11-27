@@ -2,20 +2,20 @@
   "app": "DSH-Move",
   "package": "com.dshmove.app",
   "channel": "stable",
-  "version": "3.3.0",
-  "build": 33000,
+  "version": "3.3.1",
+  "build": 33100,
   "minSdk": 26,
   "date": "2026-11-27",
-  "notes": "v3.3.0：自备模型不再被积分拦截、默认进工作模式、权限页不卡、厂商图标回到原厂 SVG（均衡固定圆圈打勾）、积分充值新增「每日签到领10万积分」七日权益、消息里的网址标蓝可点并由 AI 起中文短名；同时开启 R8 与 Dart 混淆等加固。",
+  "notes": "v3.3.1：选中卡片的粒子与边缘流光真正显示出来（此前被不透明渐变盖住），哪张卡居中哪张卡跑粒子、各档统一冷蓝白配色，推荐档粒子更密并带环绕星点闪烁。含 3.3.0 全部改动。",
   "apks": {
-    "arm64": "https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-3.3.0-arm64.apk",
-    "arm64_pages": "https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-3.3.0-arm64.apk",
-    "arm64_github": "https://raw.githubusercontent.com/MRStudioGame/dsh-move/main/dl/DeepSeek-Harness-Move-3.3.0-arm64.apk",
+    "arm64": "https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-3.3.1-arm64.apk",
+    "arm64_pages": "https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-3.3.1-arm64.apk",
+    "arm64_github": "https://raw.githubusercontent.com/MRStudioGame/dsh-move/main/dl/DeepSeek-Harness-Move-3.3.1-arm64.apk",
     "universal": "https://raw.githubusercontent.com/MRStudioGame/dsh-move/main/dl/DeepSeek-Harness-Move-1.4.0-universal.apk"
   },
-  "sha256_arm64": "f94fd4af903e562d492fd712389d43f3b87f0548b958c7165e9825dc6a0e4693",
+  "sha256_arm64": "1257dd7f628d8801d9b35e2f00aaab094ac360c7664265e838bec22316114765",
   "size_arm64": 46705312,
-  "md5_arm64": "add393b10a65d9ec7d0af0be74f81315",
+  "md5_arm64": "087fa9b0600d6198b03820c31e2da95c",
   "archiveOnly": false,
   "clientUpdateSource": "https://mrstudiogame.github.io/dsh-admin/api/app-version.json"
 }
