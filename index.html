@@ -167,7 +167,7 @@
         </div>
         <a class="btn btn-primary btn-block" data-dl href="https://ghfast.top/https://raw.githubusercontent.com/MRStudioGame/dsh-move/main/dl/DeepSeek-Harness-Move-3.4.0-arm64.apk" download>下载 APK</a>
         <a class="btn btn-secondary btn-block" style="margin-top:8px" href="https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-3.4.0-arm64.apk" download>GitHub Pages 直连（同一文件）</a>
-        <div class="sha">SHA-256：<code>5c41b7ac0d0119acdba4791704134a31a1409915753e8fd539ef5aa8e2b715e2</code><br>MD5：<code>3f075456b63dcd9d9d3501e857166297</code></div>
+        <div class="sha">SHA-256：<code>1ea3428c722b246bdee73c4cc38373d806cbb44ef3ea2358c40930642d64e3fb</code><br>MD5：<code>55e32d14551aed5c9aa426eb9561d43f</code></div>
       </div>
 
       <div class="dl-card">
@@ -508,40 +508,104 @@ addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 24),
 </script>
 
 <!-- 微信内置浏览器下载引导 -->
-<div id="wx-guide" class="wx-guide">
+<div id="wx-guide" class="wx-guide" aria-hidden="true">
   <div class="wx-tip">
-    <div class="wx-arrow">&#8599;</div>
-    <div class="wx-tip-text">点右上角 <b>&#8943;</b> 选「在浏览器打开」</div>
+    <div class="wx-arrow">&#8593;</div>
+    <div class="wx-tip-text">点右上角 &#8943; 选「在浏览器打开」</div>
   </div>
   <div class="wx-card">
-    <h4>微信里不能直接安装</h4>
-    <p>微信内置浏览器不支持下载 APK 安装包。请点右上角 <b>&#8943;</b>，选择「在浏览器打开」，再点下载即可正常安装。</p>
+    <h4>微信里下不了安装包</h4>
+    <p>微信内置浏览器不允许直接下载 APK。按下面两步走，就能正常下载安装。</p>
+    <ul class="wx-steps">
+      <li><span class="n">1</span>点右上角 <b>&#8943;</b></li>
+      <li><span class="n">2</span>选 <b>「在浏览器打开」</b>，再点「下载 APK」</li>
+    </ul>
     <div class="wx-actions">
-      <button id="wx-close" class="btn btn-primary">我知道了</button>
+      <button id="wx-copy" class="btn btn-secondary" type="button">复制下载链接</button>
+      <button id="wx-close" class="btn btn-primary" type="button">我知道了</button>
     </div>
+    <p class="wx-copy-tip" id="wx-copy-tip"></p>
   </div>
 </div>
 <script>
 (function () {
   var ua = (navigator.userAgent || '').toLowerCase();
-  var isWx = ua.indexOf('micromessenger') !== -1;
-  if (!isWx) return;
+  var isWx = ua.indexOf('micromessenger') !== -1 || ua.indexOf('wxwork') !== -1;
+  // 调试开关：任何浏览器加 ?wx=1 都能预览引导（不影响正常访问）
+  var forceWx = /[?&]wx=1/.test(location.search);
+  if (!isWx && !forceWx) return;
   var mask = document.getElementById('wx-guide');
   if (!mask) return;
-  function show(e) { if (e) { e.preventDefault(); e.stopPropagation(); } mask.classList.add('on'); }
+  var DL_URL = 'https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-3.4.0-arm64.apk';
+
+  function show(e) {
+    if (e) { e.preventDefault(); e.stopPropagation(); }
+    mask.classList.add('on');
+    mask.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+  function hide() {
+    mask.classList.remove('on');
+    mask.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+  // 命中「下载意图」：直接下载的文件链接，或跳到 #download 的入口按钮
   function pickLink(el) {
     while (el && el !== document.body) {
-      if (el.tagName === 'A' && (el.hasAttribute('data-dl') || el.hasAttribute('download'))) return el;
+      if (el.tagName === 'A') {
+        var href = el.getAttribute('href') || '';
+        if (el.hasAttribute('data-dl') || el.hasAttribute('download')) return el;
+        if (href === '#download' || href.indexOf('#download') === 0) return el;
+      }
       el = el.parentNode;
     }
     return null;
   }
-  document.addEventListener('click', function (e) { if (pickLink(e.target)) show(e); }, true);
-  var links = document.querySelectorAll('a[data-dl], a[download]');
-  for (var i = 0; i < links.length; i++) links[i].addEventListener('click', show, false);
-  var close = document.getElementById('wx-close');
-  if (close) close.addEventListener('click', function () { mask.classList.remove('on'); });
-  mask.addEventListener('click', function (e) { if (e.target === mask) mask.classList.remove('on'); });
+  document.addEventListener('click', function (e) {
+    if (pickLink(e.target)) show(e);
+  }, true);
+  document.getElementById('wx-close').addEventListener('click', hide);
+  mask.addEventListener('click', function (e) { if (e.target === mask) hide(); });
+
+  var copyBtn = document.getElementById('wx-copy');
+  var tip = document.getElementById('wx-copy-tip');
+
+  // 下载区顶部常驻提示（微信里一进来就能看见，不用先点一次）
+  var grid = document.querySelector('.dl-grid');
+  if (grid && grid.parentNode) {
+    var bar = document.createElement('div');
+    bar.className = 'wx-bar';
+    bar.innerHTML = '<span><b>微信里无法直接下载</b>，点右上角 &#8943; 选「在浏览器打开」后再下载。</span>' +
+                    '<button type="button" class="wx-bar-btn">看操作步骤</button>';
+    grid.parentNode.insertBefore(bar, grid);
+    bar.querySelector('.wx-bar-btn').addEventListener('click', function () { show(); });
+  }
+
+  copyBtn.addEventListener('click', function () {
+    var done = function () { tip.textContent = '已复制，粘贴到浏览器地址栏即可下载'; };
+    var fail = function () { tip.textContent = '复制失败，请长按链接手动复制'; };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(DL_URL).then(done).catch(function () {
+        legacyCopy();
+      });
+    } else {
+      legacyCopy();
+    }
+    function legacyCopy() {
+      try {
+        var ta = document.createElement('textarea');
+        ta.value = DL_URL;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        ta.setSelectionRange(0, DL_URL.length);
+        var ok = document.execCommand('copy');
+        document.body.removeChild(ta);
+        ok ? done() : fail();
+      } catch (e) { fail(); }
+    }
+  });
 })();
 </script>
 </body>
