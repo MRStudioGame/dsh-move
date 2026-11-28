@@ -2,20 +2,20 @@
   "app": "DSH-Move",
   "package": "com.dshmove.app",
   "channel": "stable",
-  "version": "3.4.0",
-  "build": 34000,
+  "version": "3.4.1",
+  "build": 34001,
   "minSdk": 26,
   "date": "2026-11-28",
-  "notes": "v3.4.0：新增站内客服会话（类微信单聊，可发文字与截图、保留全部历史与时间，客服回复会在抽屉「联系客服」上打红点）；新增活动中心与「发宣传视频领 10 万积分」活动（列表页 + 详情页，含开发者抖音号跳转）；新用户累计使用满 10 分钟且真正空闲时弹出一次活动弹窗，7 天内不再重复；破甲插件注入对原生均衡通道与自填 key 通道同时生效，启用期间最后一条回复带「回退」；修复内置账号令牌刷新挂起导致均衡发送无响应、插件安装重启丢失。含 3.3.4 全部改动。",
+  "notes": "v3.4.1：一机一号硬规则落地 —— 一台设备只允许一个账号，注册新账号时此前所有账号与其本地数据（会话、积分与流水、插件安装记录、客服历史、已保存的 Key）全部清除，新账号积分为 0，杜绝反复注册刷试用积分；登录/注册后客户端把当前账号上报到管理端用户页，同一设备换号显示为最新账号；官网微信内点下载改为弹出「点右上角 ⋯ → 在浏览器打开」指引并提供复制下载链接；修正官网下载卡里错误的 SHA-256 / MD5。含 3.4.0 全部改动。",
   "apks": {
-    "arm64": "https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-3.4.0-arm64.apk",
-    "arm64_pages": "https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-3.4.0-arm64.apk",
-    "arm64_github": "https://raw.githubusercontent.com/MRStudioGame/dsh-move/main/dl/DeepSeek-Harness-Move-3.4.0-arm64.apk",
+    "arm64": "https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-3.4.1-arm64.apk",
+    "arm64_pages": "https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-3.4.1-arm64.apk",
+    "arm64_github": "https://raw.githubusercontent.com/MRStudioGame/dsh-move/main/dl/DeepSeek-Harness-Move-3.4.1-arm64.apk",
     "universal": "https://raw.githubusercontent.com/MRStudioGame/dsh-move/main/dl/DeepSeek-Harness-Move-1.4.0-universal.apk"
   },
-  "sha256_arm64": "1ea3428c722b246bdee73c4cc38373d806cbb44ef3ea2358c40930642d64e3fb",
+  "sha256_arm64": "0f6a80c204efd8c4e3c91f62dd16f72858f5e0ceecdec260945d31060b5d0516",
   "size_arm64": 49141834,
-  "md5_arm64": "55e32d14551aed5c9aa426eb9561d43f",
+  "md5_arm64": "e4c9369d509d1b73727e1b583edf471c",
   "archiveOnly": false,
   "clientUpdateSource": "https://mrstudiogame.github.io/dsh-admin/api/app-version.json"
 }
