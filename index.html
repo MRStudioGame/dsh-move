@@ -38,7 +38,7 @@
 <section class="hero">
   <div class="wrap hero-grid">
     <div>
-      <div class="hero-badge"><i></i> v3.4.1 正式版已发布</div>
+      <div class="hero-badge"><i></i> v3.5.0 正式版已发布</div>
       <h1>一句话交代完，<br><span class="accent">手机自己动手。</span></h1>
       <p class="hero-sub">
         DSH 的安卓客户端。它先想、再说、列计划、再动手：
@@ -49,7 +49,7 @@
         <a class="btn btn-secondary" href="#features">看它怎么干活</a>
       </div>
       <ul class="hero-meta">
-        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M4 21h16"/></svg>arm64-v8a · 46.9 MB</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M4 21h16"/></svg>arm64-v8a · 49.6 MB</li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8M8 11h8M8 15h5"/></svg>Android 8.0+</li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 3l7 4v5c0 4-3 7-7 9-4-2-7-5-7-9V7z"/><path d="M9 12l2 2 4-4"/></svg>本地执行 · 数据不出设备</li>
       </ul>
@@ -59,7 +59,7 @@
       <div class="screen-bar">
         <img src="assets/app-icon.png" alt="">
         <b>DSH · 工作模式</b>
-        <small>3.4.1</small>
+        <small>3.5.0</small>
       </div>
       <div class="bubble user">打开计算器，算 91×37</div>
 
@@ -163,17 +163,17 @@
         <h3>arm64-v8a</h3>
         <p class="desc">适用于近十年内几乎所有手机与平板，体积更小、安装更快。</p>
         <div class="dl-meta">
-          <span>v3.4.1 (34001)</span><span>46.9 MB</span><span>Android 8.0+</span>
+          <span>v3.5.0 (35000)</span><span>49.6 MB</span><span>Android 8.0+</span>
         </div>
-        <a class="btn btn-primary btn-block" data-dl href="https://ghfast.top/https://raw.githubusercontent.com/MRStudioGame/dsh-move/main/dl/DeepSeek-Harness-Move-3.4.1-arm64.apk" download>下载 APK</a>
-        <a class="btn btn-secondary btn-block" style="margin-top:8px" href="https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-3.4.1-arm64.apk" download>GitHub Pages 直连（同一文件）</a>
-        <div class="sha">SHA-256：<code>0f6a80c204efd8c4e3c91f62dd16f72858f5e0ceecdec260945d31060b5d0516</code><br>MD5：<code>e4c9369d509d1b73727e1b583edf471c</code></div>
+        <a class="btn btn-primary btn-block" data-dl href="https://ghfast.top/https://raw.githubusercontent.com/MRStudioGame/dsh-move/main/dl/DeepSeek-Harness-Move-3.5.0-arm64.apk" download>下载 APK</a>
+        <a class="btn btn-secondary btn-block" style="margin-top:8px" href="https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-3.5.0-arm64.apk" download>GitHub Pages 直连（同一文件）</a>
+        <div class="sha">SHA-256：<code>06bceff4930ca075f8803d1893e9e3a647ee9de38bdb343a3c9c42868a9a470b</code><br>MD5：<code>c6bde6eee218ca3b6a987adcaece7f1c</code></div>
       </div>
 
       <div class="dl-card">
         <div class="dl-flag">架构说明</div>
         <h3>为什么只有 arm64</h3>
-        <p class="desc">3.4.1 仅发布 arm64-v8a 包，覆盖近十年机型，体积更小、安装更快。2017 年前的老设备可继续使用 1.4.0 通用包。</p>
+        <p class="desc">3.5.0 仅发布 arm64-v8a 包，覆盖近十年机型，体积更小、安装更快。2017 年前的老设备可继续使用 1.4.0 通用包。</p>
         <div class="dl-meta"><span>arm64-v8a</span><span>Android 8.0+</span></div>
         <a class="btn btn-secondary btn-block" href="https://ghfast.top/https://github.com/MRStudioGame/dsh-move/releases/download/v1.4.0/DeepSeek-Harness-Move-1.4.0-universal.apk" download>下载 v1.4.0 通用包</a>
         <div class="sha">旧版通用包 SHA-256：<code>902c63c9ea44fa596b685f5b5055fa55dda458eda00ccba4141fed13e012ee85</code></div>
@@ -209,9 +209,30 @@
     <div class="log">
 <div class="log-row">
 <div class="log-meta">
-<div class="ver">v3.4.1</div>
+<div class="ver">v3.5.0</div>
 <span class="date">2026-11-28</span>
 <span class="badge new">正式版</span>
+</div>
+<div class="log-body">
+<ul>
+<li><b>系统应用授权</b> —— 引导流程与「权限中心」新增一页：时钟、日历、定位、通讯录、短信、通话记录，逐项开、逐项关，用到了才申请</li>
+<li><b>听懂人话</b> —— 工作模式新增口语理解规则：「给我妈发个消息说我晚点到」「把刚才那条验证码念一下」这类话会被自动翻成人物 / 动作 / 应用 / 条件，缺信息先查通讯录、短信、定位补齐，不再反问「你想做什么」</li>
+<li><b>清理主页</b> —— 主页「代码 / 文件 / 插件」三个快捷入口连根删除，引导页不再给模板，只留一句提示：直接用日常话交代</li>
+<li><b>操控小窗</b> —— 新增自研屏幕镜像小窗：它替你点手机时，右上角实时显示它看到的画面（不用系统画中画，避免一个应用只能挂一个窗口的限制），可点一下暂停；引导里问一次，设置里可开关</li>
+<li><b>语音工具</b> —— 新增 speak_voice：把要说的话用系统中文女声离线合成音频，「发语音消息」这类任务由它自己判断要不要调用</li>
+<li><b>修复安装解析</b> —— 「下载新版本安装包解析出现问题」：现在装前先真解析 APK（架构 / 签名 / 版本号），把原因翻译成中文并给「放到下载目录」的手动安装兜底</li>
+<li><b>活动升级</b> —— 发宣传视频：单条点赞 &gt; 40 计一条合格视频，每条 10 万积分，同账号最多 5 条、<b>最多领 50 万积分</b>，宣传图同步换新</li>
+<li><b>主题</b> —— 「初恋感觉」更名「粉色樱花」；新增付费主题「爱的笼罩」：樱花、爱心、渐变、丁达尔心形光晕与粒子，2 万积分买断或试用 1 分钟（每账号一次，见倒计时），整套界面主色随之为玫瑰紫</li>
+<li><b>附件</b> —— 发给它文件不再限制格式：文件本体直接进工作区交给它读，不再硬塞成文本</li>
+<li><b>安装包</b> —— arm64-v8a 49.6 MB，覆盖 3.4.1 直接升级</li>
+</ul>
+</div>
+</div>
+<div class="log-row">
+<div class="log-meta">
+<div class="ver">v3.4.1</div>
+<span class="date">2026-11-28</span>
+<span class="badge">历史版本</span>
 </div>
 <div class="log-body">
 <ul>
@@ -485,7 +506,7 @@
   <div class="cta">
     <div>
       <h2>把工具装进口袋</h2>
-      <p>v3.4.1 · arm64-v8a · 46.9 MB · Android 8.0+</p>
+      <p>v3.5.0 · arm64-v8a · 49.6 MB · Android 8.0+</p>
     </div>
     <a class="btn btn-primary" href="#download">下载 APK</a>
   </div>
@@ -552,7 +573,7 @@ addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 24),
   if (!isWx && !forceWx) return;
   var mask = document.getElementById('wx-guide');
   if (!mask) return;
-  var DL_URL = 'https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-3.4.1-arm64.apk';
+  var DL_URL = 'https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-3.5.0-arm64.apk';
 
   function show(e) {
     if (e) { e.preventDefault(); e.stopPropagation(); }
