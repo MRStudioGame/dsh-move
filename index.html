@@ -38,7 +38,7 @@
 <section class="hero">
   <div class="wrap hero-grid">
     <div>
-      <div class="hero-badge"><i></i> v3.3.1 正式版已发布</div>
+      <div class="hero-badge"><i></i> v3.3.2 正式版已发布</div>
       <h1>一句话交代完，<br><span class="accent">手机自己动手。</span></h1>
       <p class="hero-sub">
         DSH 的安卓客户端。它先想、再说、列计划、再动手：
@@ -59,7 +59,7 @@
       <div class="screen-bar">
         <img src="assets/app-icon.png" alt="">
         <b>DSH · 工作模式</b>
-        <small>3.3.1</small>
+        <small>3.3.2</small>
       </div>
       <div class="bubble user">打开计算器，算 91×37</div>
 
@@ -163,17 +163,17 @@
         <h3>arm64-v8a</h3>
         <p class="desc">适用于近十年内几乎所有手机与平板，体积更小、安装更快。</p>
         <div class="dl-meta">
-          <span>v3.3.1 (33100)</span><span>44.5 MB</span><span>Android 8.0+</span>
+          <span>v3.3.2 (33200)</span><span>44.5 MB</span><span>Android 8.0+</span>
         </div>
-        <a class="btn btn-primary btn-block" data-dl href="https://ghfast.top/https://raw.githubusercontent.com/MRStudioGame/dsh-move/main/dl/DeepSeek-Harness-Move-3.3.1-arm64.apk" download>下载 APK</a>
-        <a class="btn btn-secondary btn-block" style="margin-top:8px" href="https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-3.3.1-arm64.apk" download>GitHub Pages 直连（同一文件）</a>
-        <div class="sha">SHA-256：<code>1257dd7f628d8801d9b35e2f00aaab094ac360c7664265e838bec22316114765</code><br>MD5：<code>087fa9b0600d6198b03820c31e2da95c</code></div>
+        <a class="btn btn-primary btn-block" data-dl href="https://ghfast.top/https://raw.githubusercontent.com/MRStudioGame/dsh-move/main/dl/DeepSeek-Harness-Move-3.3.2-arm64.apk" download>下载 APK</a>
+        <a class="btn btn-secondary btn-block" style="margin-top:8px" href="https://mrstudiogame.github.io/dsh-move/dl/DeepSeek-Harness-Move-3.3.2-arm64.apk" download>GitHub Pages 直连（同一文件）</a>
+        <div class="sha">SHA-256：<code>5c41b7ac0d0119acdba4791704134a31a1409915753e8fd539ef5aa8e2b715e2</code><br>MD5：<code>3f075456b63dcd9d9d3501e857166297</code></div>
       </div>
 
       <div class="dl-card">
         <div class="dl-flag">架构说明</div>
         <h3>为什么只有 arm64</h3>
-        <p class="desc">3.3.1 仅发布 arm64-v8a 包，覆盖近十年机型，体积更小、安装更快。2017 年前的老设备可继续使用 1.4.0 通用包。</p>
+        <p class="desc">3.3.2 仅发布 arm64-v8a 包，覆盖近十年机型，体积更小、安装更快。2017 年前的老设备可继续使用 1.4.0 通用包。</p>
         <div class="dl-meta"><span>arm64-v8a</span><span>Android 8.0+</span></div>
         <a class="btn btn-secondary btn-block" href="https://ghfast.top/https://github.com/MRStudioGame/dsh-move/releases/download/v1.4.0/DeepSeek-Harness-Move-1.4.0-universal.apk" download>下载 v1.4.0 通用包</a>
         <div class="sha">旧版通用包 SHA-256：<code>902c63c9ea44fa596b685f5b5055fa55dda458eda00ccba4141fed13e012ee85</code></div>
@@ -207,6 +207,23 @@
     </div>
 
     <div class="log">
+      <div class="log-row">
+        <div class="log-meta">
+          <div class="ver">v3.3.2</div>
+          <span class="date">2026-11-28</span>
+          <span class="badge new">正式版</span>
+        </div>
+        <div class="log-body">
+          <ul>
+            <li><b>权限页与权限弹窗不再卡</b> —— 权限探测全部挪到后台单线程算，一次调用回传 7 项结果；无障碍检测从「最多轮询 2.5 秒」改成一次快照，进权限页、开关工作模式、从系统设置页返回都不再整页停顿</li>
+            <li><b>「给了权限还提示权限不全」修掉</b> —— 判定缺项后 1.2 秒自动复检一次，回到 App 也会重测；刚开完权限不会再闪错误的红条</li>
+            <li><b>冷启动先加载、备好再进首页</b> —— 启动页立刻出画面（不再黑屏），初始化（日志、插件、账号、自动化通道）全部并行放后台，就绪后才进首页；真机冷启动 940ms</li>
+            <li><b>工作模式门禁去掉重复探测</b> —— 去掉切换时又多跑一遍的全能力预检，超时压到 1.8 秒，点一下就切过去</li>
+            <li><b>新增「联系客服」</b> —— 积分充值页底部与「关于」页各加一条，点击直接调起邮件 App 写信给官方邮箱</li>
+            <li><b>安装包</b> —— arm64-v8a 44.5 MB，覆盖 3.3.1 直接升级，数据保留</li>
+          </ul>
+        </div>
+      </div>
       <div class="log-row">
         <div class="log-meta">
           <div class="ver">v3.3.1</div>
@@ -401,7 +418,7 @@
   <div class="cta">
     <div>
       <h2>把工具装进口袋</h2>
-      <p>v3.3.1 · arm64-v8a · 44.5 MB · Android 8.0+</p>
+      <p>v3.3.2 · arm64-v8a · 44.5 MB · Android 8.0+</p>
     </div>
     <a class="btn btn-primary" href="#download">下载 APK</a>
   </div>
